@@ -74,6 +74,12 @@
     text-shadow: 2px 2px #FFF250;
   }
 
+  .vertical-text {
+    writing-mode: vertical-rl; 
+    transform: rotate(180deg);
+    margin-right: 20px;
+}
+
   .cta {
     position: relative;
     margin: auto;
