@@ -9,7 +9,7 @@ export default function Hero():React.ReactNode {
     </div>
 
         <div className='flex justify-center items-center'>
-            <div className="blob mx-auto lg:mt-[5%] sm:mt-[10%]"></div>
+            <div className="blob bg-[url('./me.jpg')] mx-auto lg:mt-[5%] sm:mt-[10%]"></div>
             <h1 className="text-xl font-thin cursor-pointer hidden lg:flex h-[85vh] py-1 mb-1 right-0 text-[#FFF250] vertical-text">SCROLL DOWN</h1>
         </div>
         <div className='flex justify-center items-center'>
