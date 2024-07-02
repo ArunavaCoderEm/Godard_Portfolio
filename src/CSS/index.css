@@ -141,3 +141,17 @@
         border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
     }
 }
+
+.glow {
+  animation: glowEffect 2s infinite;
+  color: #FFF250;
+}
+
+@keyframes glowEffect {
+  0%, 50% {
+    text-shadow: 0 0 10px #FFF250;
+  }
+  100% {
+    text-shadow: none;
+  }
+}

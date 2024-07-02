@@ -28,13 +28,21 @@ export default function App () :React.ReactNode {
             key="loader"
             initial={{ opacity: 1 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0.5, y: 200 }}
+            exit={{ opacity: 0, y: 200 }} 
             transition={{ duration: 1 }}
           >
             <Loader />
           </motion.div>
         ) : (
-          <Page />
+          <motion.div
+            key="page"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <Page />
+          </motion.div>
         )}
       </AnimatePresence>
     </>
