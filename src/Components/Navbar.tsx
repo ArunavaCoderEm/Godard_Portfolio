@@ -68,22 +68,30 @@ export default function Navbar():React.ReactNode {
       </div>
       {menuOpen && (
         <div className="md:hidden">
-          <nav className="flex flex-col items-center gap-4 py-4">
-            <Link to="/" className="text-sm p-2 font-semibold hover:underline underline-offset-4">
+          <nav className="flex px-4 flex-col rounded-lg items-center gap-4 py-4">
+            <Link 
+            onClick={() => setmenu("home")}
+            to="/" className={`text-sm rounded-lg p-2 ${menu === 'home' ? "bg-black sha text-white" : "bg-[#D29EFB]"} w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}>
               Home
             </Link>
-            <Link to="/" className="text-sm p-2 font-semibold hover:underline underline-offset-4">
+            <Link 
+            onClick={() => setmenu("about")}
+            to="/" className={`text-sm p-2 rounded-lg ${menu === 'about' ? "bg-black sha text-white" : "bg-[#D29EFB]"} w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}>
               About
             </Link>
-            <Link to="/" className="text-sm p-2 font-semibold hover:underline underline-offset-4">
+            <Link 
+            onClick={() => setmenu("projects")}
+            to="/" className={`text-sm p-2 rounded-lg ${menu === 'projects' ? "bg-black sha text-white" : "bg-[#D29EFB]"} w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}>
               Projects
             </Link>
-            <Link to="/" className="text-sm p-2 font-semibold hover:underline underline-offset-4">
+            <Link 
+            onClick={() => setmenu("testimonial")}
+            to="/" className={`text-sm p-2 rounded-lg ${menu === 'testimonial' ? "bg-black sha text-white" : "bg-[#D29EFB]"} w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}>
               Testimonials
             </Link>
             <Link
               to="/"
-              className="inline-flex h-9 p-2 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+              className="inline-flex h-9 p-2 items-center justify-center rounded-md bg-[#FFF250] text-black w-80 my-7 sha border-black border-2"
             >
               Contact
             </Link>
@@ -123,8 +131,8 @@ function CloseIcon(props :any) {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
+      fill="red"
+      stroke="red"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
