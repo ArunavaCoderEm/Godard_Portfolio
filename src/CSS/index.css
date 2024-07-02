@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -45,3 +48,62 @@
     }
   }
   
+  .sha {
+    box-shadow: 0 0 15px #121316;
+  }
+
+  .mukta-medium {
+    font-family: "Mukta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .mukta-bold {
+    font-family: "Mukta", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .anton-sc-regular {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .shat {
+    text-shadow: 2px 2px #FFF250;
+  }
+
+  .cta {
+    position: relative;
+    margin: auto;
+    padding: 4px 15px;
+    z-index: 1;
+    transition: all 0.2s ease;
+  }
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: #FFF250;
+    width: 32px;
+    height: 32px;
+    transition: all 0.3s ease;
+  }
+
+  .cta:hover:before {
+    width: 100%;
+    background: #D29EFB;
+  }
+
+  .ctaac {
+    width: 100%;
+    background: #D29EFB;
+  }
+
+  .cta:active {
+    transform: scale(0.96);
+  }

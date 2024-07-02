@@ -2,19 +2,28 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Navbar():React.ReactNode {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const [menu, setmenu] = useState<string>("home")
+
   return (
     <header className="bg-white shadow-md">
       <div className="flex h-16 w-full items-center px-4 md:px-6">
-        <Link to="/" className="mr-6 flex items-center">
-
-          <span className="sr-only">Godard</span>
-        </Link>
+      <Link
+      to="/"
+      onClick={() => setmenu("home")}
+      className="mr-6 flex items-center text-black hover:text-gray-800 transition-colors duration-300"
+    >
+      <span className="anton-sc-regular hover:tracking-wider transition-all duration-200 tracking-wide text-2xl shat selection:bg-[#FFF250]">
+        <span className='font-extrabold'>.</span>
+        GODARD
+        <span className='font-extrabold'>.</span>
+      </span>
+    </Link>
         <div className="ml-auto flex items-center md:hidden">
           <button onClick={toggleMenu} className="p-2 focus:outline-none">
             {menuOpen ? (
@@ -25,48 +34,56 @@ export default function Navbar():React.ReactNode {
           </button>
         </div>
         <div className="hidden md:flex flex-1 justify-center">
-          <nav className="flex items-center gap-4 sm:gap-6">
-            <Link to="/" className="text-sm font-medium hover:underline underline-offset-4">
-              Home
+          <nav className="flex selection:bg-[#FFF250] items-center gap-4 sm:gap-6">
+            <Link
+            onClick={() => setmenu("home")}
+            to="/" className= {`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'home' ? "ctaac" : "cta"}`}>
+              <span className='relative z-10'>Home</span>
             </Link>
-            <Link to="/" className="text-sm font-medium hover:underline underline-offset-4">
-              About
+            <Link 
+            onClick={() => setmenu("about")}
+            to="/" className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'about' ? "ctaac" : "cta"}`}>
+                <span className='relative z-10'>About</span>
             </Link>
-            <Link to="/" className="text-sm font-medium hover:underline underline-offset-4">
-              Projects
+            <Link 
+            onClick={() => setmenu("projets")}
+            to="/" className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'projects' ? "ctaac" : "cta"}`}>
+                <span className='relative z-10'>Projects</span>
             </Link>
-            <Link to="/" className="text-sm font-medium hover:underline underline-offset-4">
-              Testimonials
+            <Link 
+            onClick={() => setmenu("testimonial")}
+            to="/" className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'testimonial' ? "ctaac" : "cta"}`}>
+                <span className='relative z-10'>Testimonials</span>
             </Link>
           </nav>
         </div>
-        <div className="hidden md:flex ml-auto">
+        <div className="hidden md:flex ml-auto p-2">
           <Link
             to="/"
-            className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+            className="inline-flex h-9  items-center justify-center rounded-md bg-[#FFF250] text-black px-4 py-2 text-sm font-semibold transition-all duration-200 shadow hover:translate-y-1 mukta-medium sha border-black border-2"
           >
-            Contact
+            Contact Me
           </Link>
         </div>
       </div>
       {menuOpen && (
         <div className="md:hidden">
           <nav className="flex flex-col items-center gap-4 py-4">
-            <Link to="/" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link to="/" className="text-sm p-2 font-semibold hover:underline underline-offset-4">
               Home
             </Link>
-            <Link to="/" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link to="/" className="text-sm p-2 font-semibold hover:underline underline-offset-4">
               About
             </Link>
-            <Link to="/" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link to="/" className="text-sm p-2 font-semibold hover:underline underline-offset-4">
               Projects
             </Link>
-            <Link to="/" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link to="/" className="text-sm p-2 font-semibold hover:underline underline-offset-4">
               Testimonials
             </Link>
             <Link
               to="/"
-              className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+              className="inline-flex h-9 p-2 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
             >
               Contact
             </Link>
