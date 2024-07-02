@@ -67,7 +67,7 @@ export default function Navbar():React.ReactNode {
         </div>
       </div>
       {menuOpen && (
-        <div className="md:hidden">
+        <div className="md:hidden z-[10]">
           <nav className="flex px-4 flex-col rounded-lg items-center gap-4 py-4">
             <Link 
             onClick={() => setmenu("home")}
@@ -91,7 +91,7 @@ export default function Navbar():React.ReactNode {
             </Link>
             <Link
               to="/"
-              className="inline-flex h-9 p-2 items-center justify-center rounded-md bg-[#FFF250] text-black w-80 my-7 sha border-black border-2"
+              className="inline-flex h-9 p-2 items-center justify-center rounded-md bg-[#FFF250] text-black w-80 my-7 transition-all duration-200 shadow hover:translate-y-1 sha border-black border-2"
             >
               Contact
             </Link>
