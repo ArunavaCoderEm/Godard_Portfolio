@@ -51,6 +51,11 @@ export default function Navbar():React.ReactNode {
                 <span className='relative z-10'>Projects</span>
             </Link>
             <Link 
+            onClick={() => setmenu("skills")}
+            to="/" className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'skills' ? "ctaac" : "cta"}`}>
+                <span className='relative z-10'>skills</span>
+            </Link>
+            <Link 
             onClick={() => setmenu("testimonial")}
             to="/" className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'testimonial' ? "ctaac" : "cta"}`}>
                 <span className='relative z-10'>Testimonials</span>
@@ -83,6 +88,11 @@ export default function Navbar():React.ReactNode {
             onClick={() => setmenu("projects")}
             to="/" className={`text-sm p-2 rounded-lg ${menu === 'projects' ? "bg-black sha text-white" : "bg-[#D29EFB]"} w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}>
               Projects
+            </Link>
+            <Link 
+            onClick={() => setmenu("skills")}
+            to="/" className={`text-sm p-2 rounded-lg ${menu === 'skills' ? "bg-black sha text-white" : "bg-[#D29EFB]"} w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}>
+              Skills
             </Link>
             <Link 
             onClick={() => setmenu("testimonial")}

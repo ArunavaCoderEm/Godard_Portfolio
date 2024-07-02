@@ -10,10 +10,10 @@ export default function Hero():React.ReactNode {
 
         <div className='flex justify-center items-center'>
             <div className="blob mx-auto lg:mt-[5%] sm:mt-[10%]"></div>
-            <h1 className="text-xl font-bold cursor-pointer hidden lg:flex h-[85vh] py-1 mb-1 right-0 text-[#FFF250] vertical-text">SCROLL DOWN</h1>
+            <h1 className="text-xl font-thin cursor-pointer hidden lg:flex h-[85vh] py-1 mb-1 right-0 text-[#FFF250] vertical-text">SCROLL DOWN</h1>
         </div>
         <div className='flex justify-center items-center'>
-        <h1 className='text-center text-5xl bg-clip-text text-transparent bg-gradient-to-b from-yellow-200 to-white font-extrabold my-3 selection:bg-[#FFF250] mukta-bold'>
+        <h1 className='text-center text-5xl bg-clip-text text-transparent bg-gradient-to-b from-yellow-200 to-white font-extrabold mt-3 selection:bg-[#FFF250] mukta-bold'>
         .Design in mind to code in reality.
         </h1>
         </div>
