@@ -10,10 +10,10 @@ export default function Navbar():React.ReactNode {
 
   return (
     <header className="bg-white shadow-md">
-      <div className="flex h-20 w-full items-center px-4 md:px-6">
-        <Link to="#" className="mr-6 flex items-center">
-          <MountainIcon className="h-6 w-6" />
-          <span className="sr-only">Acme Inc</span>
+      <div className="flex h-16 w-full items-center px-4 md:px-6">
+        <Link to="/" className="mr-6 flex items-center">
+
+          <span className="sr-only">Godard</span>
         </Link>
         <div className="ml-auto flex items-center md:hidden">
           <button onClick={toggleMenu} className="p-2 focus:outline-none">
@@ -26,23 +26,23 @@ export default function Navbar():React.ReactNode {
         </div>
         <div className="hidden md:flex flex-1 justify-center">
           <nav className="flex items-center gap-4 sm:gap-6">
-            <Link to="#" className="text-sm font-medium hover:underline underline-offset-4">
-              Features
+            <Link to="/" className="text-sm font-medium hover:underline underline-offset-4">
+              Home
             </Link>
-            <Link to="#" className="text-sm font-medium hover:underline underline-offset-4">
-              Pricing
-            </Link>
-            <Link to="#" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link to="/" className="text-sm font-medium hover:underline underline-offset-4">
               About
             </Link>
-            <Link to="#" className="text-sm font-medium hover:underline underline-offset-4">
-              Contact
+            <Link to="/" className="text-sm font-medium hover:underline underline-offset-4">
+              Projects
+            </Link>
+            <Link to="/" className="text-sm font-medium hover:underline underline-offset-4">
+              Testimonials
             </Link>
           </nav>
         </div>
         <div className="hidden md:flex ml-auto">
           <Link
-            to="#"
+            to="/"
             className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
           >
             Contact
@@ -52,20 +52,20 @@ export default function Navbar():React.ReactNode {
       {menuOpen && (
         <div className="md:hidden">
           <nav className="flex flex-col items-center gap-4 py-4">
-            <Link to="#" className="text-sm font-medium hover:underline underline-offset-4">
-              Features
+            <Link to="/" className="text-sm font-medium hover:underline underline-offset-4">
+              Home
             </Link>
-            <Link to="#" className="text-sm font-medium hover:underline underline-offset-4">
-              Pricing
-            </Link>
-            <Link to="#" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link to="/" className="text-sm font-medium hover:underline underline-offset-4">
               About
             </Link>
-            <Link to="#" className="text-sm font-medium hover:underline underline-offset-4">
-              Contact
+            <Link to="/" className="text-sm font-medium hover:underline underline-offset-4">
+              Projects
+            </Link>
+            <Link to="/" className="text-sm font-medium hover:underline underline-offset-4">
+              Testimonials
             </Link>
             <Link
-              to="#"
+              to="/"
               className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
             >
               Contact
@@ -74,25 +74,6 @@ export default function Navbar():React.ReactNode {
         </div>
       )}
     </header>
-  );
-}
-
-function MountainIcon(props :any) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-    </svg>
   );
 }
 
