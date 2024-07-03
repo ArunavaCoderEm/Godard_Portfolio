@@ -38,9 +38,12 @@ const AboutMe = ():React.ReactNode => {
             </li>
           </p>
           <div className="mt-6">
-            <button className="px-4 py-2 bg-[#D29EFB] rounded-md font-semibold mukta hover:translate-x-2 transition-all duration-300 focus:outline-none mukta tracking-wide border-2 border-black">
-              My Resume
-            </button>
+          <button className="group/button sha relative inline-flex items-center justify-center overflow-hidden rounded-md bg-[#D29EFB] px-4 py-1.5 text-xl text-black border-2 border-black transition-all duration-300 ease-in-out hover:scale-105 mukta font-bold hover:shadow-lg hover:shadow-red-500/30">
+            <span className="text-sm">My Resume</span>
+            <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
+              <div className="relative h-full w-8 bg-white/20" />
+            </div>
+          </button>
           </div>
         </div>
       </div>

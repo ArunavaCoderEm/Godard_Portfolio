@@ -59,6 +59,10 @@
   .shaw {
     box-shadow: 0 0 15px #b1b1b1;
   }
+  
+  .shawg {
+    filter: drop-shadow(0 0 10px #ffffffc1);
+  }
 
   .mukta-medium {
     font-family: "Mukta", sans-serif;

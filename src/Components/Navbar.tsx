@@ -55,11 +55,6 @@ export default function Navbar():React.ReactNode {
             to="/" className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'projects' ? "ctaac" : "cta"}`}>
                 <span className='relative z-10'>Projects</span>
             </Link>
-            <Link 
-            onClick={() => setmenu("testimonial")}
-            to="/" className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'testimonial' ? "ctaac" : "cta"}`}>
-                <span className='relative z-10'>Testimonials</span>
-            </Link>
           </nav>
         </div>
         <div className="hidden md:flex ml-auto p-2">
@@ -93,11 +88,6 @@ export default function Navbar():React.ReactNode {
             onClick={() => setmenu("projects")}
             to="/" className={`text-sm p-2 rounded-lg ${menu === 'projects' ? "bg-black sha text-white" : "bg-[#D29EFB]"} w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}>
               Projects
-            </Link>
-            <Link 
-            onClick={() => setmenu("testimonial")}
-            to="/" className={`text-sm p-2 rounded-lg ${menu === 'testimonial' ? "bg-black sha text-white" : "bg-[#D29EFB]"} w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}>
-              Testimonials
             </Link>
             <Link
               to="/"
