@@ -14,7 +14,7 @@ export default function Hero():React.ReactNode {
         <span className="mr-2">✨</span> Home <span className="ml-2">✨</span>
     </button>
         <div className='flex mt-5 justify-center items-center'>
-            <div className="blob bg-[url('./me.jpg')] mx-auto lg:mt-[5%] sm:mt-[10%]"></div>
+            <div className="blob bg-[url('/me.jpg')] mx-auto lg:mt-[5%] sm:mt-[10%]"></div>
             <h1 
             onClick={() => window.scrollTo(0, 550)}
             className="text-xl font-thin cursor-pointer hidden tracking-tight lg:flex h-[85vh] py-1 mb-1 right-0 text-[#FFF250] vertical-text">SCROLL DOWN</h1>
