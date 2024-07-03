@@ -10,6 +10,8 @@ export default function Projects():React.ReactNode {
     setpro(projectsList)
   },pro)
 
+  console.log(pro)
+
   return (
     <>
       <button className="flex shaw items-center mt-28 w-36 absolute right-0 left-0 mx-auto backdrop-blur-sm bg-black/60 text-white font-semibold px-4 py-1 rounded-full shadow-lg sha focus:outline-none">
@@ -20,7 +22,12 @@ export default function Projects():React.ReactNode {
                 <div key={index} className="col-span-1">
                     <Procard 
                         img = {item.img}
-                        lbl = {item.label}
+                        title = {item.label}
+                        desc = {item.desc}
+                        gh = {item.ghlink}
+                        dep = {item.deplink}
+                        auth = {item.auth}
+                        stack = {item.stack}
                         />
                 </div>
             ))}

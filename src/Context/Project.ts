@@ -75,15 +75,6 @@ export const projectsList: ProjLbImg[] = [
         stack : "HTML CSS JS"
     },
     {
-        label : "GOD Gpt",
-        img : "./gpt.png",
-        ghlink : "https://github.com/ArunavaCoderEm/God_GPT",
-        deplink : "https://github.com/ArunavaCoderEm/God_GPT",
-        auth: "Arunava Dutta",
-        desc : "This GUI can answer your questions either if you type the question or say it aloud. And it gives you the question in text form and it also can read the answer aloud if you want.",
-        stack : "Python"
-    },
-    {
         label : "NovelNest",
         img : "./novel.jpg",
         ghlink : "https://github.com/ArunavaCoderEm/Novel-Nest",
