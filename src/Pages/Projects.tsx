@@ -4,6 +4,10 @@ import { ProjLbImg, projectsList } from '../Context/Project'
 import { Link } from 'react-router-dom'
 import TestimonialCarousel from '../Components/Testimonials'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'; 
+AOS.init();
+
 export default function Projects():React.ReactNode {
 
   const [pro, setpro] = useState<ProjLbImg[]>([])
