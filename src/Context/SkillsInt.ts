@@ -72,6 +72,10 @@ export const skills : LabeledValue[] = [
         img : "./websocket.png",
         label : "Websocket"
     },
+    {
+        img : "./webrtc.png",
+        label : "WebRTC"
+    },
 ]
 
 export const tools : LabeledValue[] = [

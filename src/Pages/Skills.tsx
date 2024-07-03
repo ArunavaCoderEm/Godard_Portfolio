@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Skillcard from '../Components/Skillcard';
-import { LabeledValue, skills, tools } from '../Skills/SkillsInt';
+import { LabeledValue, skills, tools } from '../Context/SkillsInt';
 
 const Skills = ():React.ReactNode => {
 
