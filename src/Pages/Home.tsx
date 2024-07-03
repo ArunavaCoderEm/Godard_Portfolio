@@ -4,8 +4,9 @@ import Exp from '../Components/Exp'
 import About from './About'
 import Skills from './Skills'
 import Projects from './Projects'
+import Contact from './Contact'
 
-export default function Home():React.ReactNode {
+export default function MainPage():React.ReactNode {
   return (
     <>
     <Hero />
@@ -13,6 +14,7 @@ export default function Home():React.ReactNode {
     <About />
     <Skills />
     <Projects />
+    <Contact />
     </>
   )
 }
