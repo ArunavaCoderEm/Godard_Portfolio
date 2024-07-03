@@ -1,6 +1,7 @@
 // src/components/AboutMe.jsx
 
 import React from 'react';
+import TextRotate from '../Components/Rottext';
 
 const AboutMe = ():React.ReactNode => {
   return (
@@ -17,11 +18,15 @@ const AboutMe = ():React.ReactNode => {
             alt="Profile"
             />
         </div>
-        <div className="p-8 bg-[#FFF250]">
+        <div className="p-8 bg-gradient-to-bl from-[#FFF250] to-[#a09606]">
           <div className="uppercase tracking-wide text-xl text-black font-extrabold mukta">Hello 👋 !</div>
-          <h1 className="mt-2 text-2xl leading-tight font-medium text-black">Arunava Dutta</h1>
-          <p className="mt-2 text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+          <h1 className="mt-2 text-2xl leading-tight font-medium text-black"><span className='text-white font-extrabold p-1 mukta'>I am</span> Arunava Dutta.</h1>
+          <div className='py-2 mukta'>
+            <h2 className='mx-1 w-full'>I am a</h2>
+            <TextRotate />
+          </div>
+          <p className="mt-2 text-black font-thin">
+          I’m a developer passionate about building clean web applications with simple, effective functionalities. I love turning designs into code and am always eager to learn new skills, tools, and languages. I've worked on numerous solo full-stack projects and participated in hackathons, often winning with my team.
           </p>
           <div className="mt-4">
             <a
