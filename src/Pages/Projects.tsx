@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Procard from '../Components/Procard'
 import { ProjLbImg, projectsList } from '../Context/Project'
 import { Link } from 'react-router-dom'
+import TestimonialCarousel from '../Components/Testimonials'
 
 export default function Projects():React.ReactNode {
 
@@ -34,6 +35,9 @@ export default function Projects():React.ReactNode {
             ))}
     </div>
     <Link to="/" className='text-white mb-10 mx-auto flex justify-center hover:text-[#FFF250] transition-all duration-300 text-center'>More Projects Are Available On My GitHub</Link>
+
+      <TestimonialCarousel />
+
     </>
   )
 }
