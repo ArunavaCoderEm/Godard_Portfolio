@@ -51,6 +51,10 @@
   .sha {
     box-shadow: 0 0 15px #121316;
   }
+  
+  .shaw {
+    box-shadow: 0 0 15px #b1b1b1;
+  }
 
   .mukta-medium {
     font-family: "Mukta", sans-serif;

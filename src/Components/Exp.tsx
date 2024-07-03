@@ -5,8 +5,11 @@ export default function Exp():React.ReactNode {
   return (
     <>
     <div className='bg-white py-5 px-2'>
-        <div className='grid lg:grid-cols-3 sm:grid-cols-1'>
-            <Link to="/" className='bg-[#FFF250] sha m-3 hover:scale-95 transition-all duration-300 rounded-lg border-1 shadow border-black'>
+    <button className="flex items-center w-32 absolute right-0 left-0 mx-auto mb-2 backdrop-blur-sm bg-black/60 text-white font-semibold px-4 py-1 rounded-full shadow-lg sha focus:outline-none">
+        <span className="mr-2">✨</span> Works <span className="ml-2">✨</span>
+    </button>
+        <div className='grid lg:grid-cols-3 mt-10 sm:grid-cols-1'>
+            <Link to="/" className='bg-gradient-to-b from-[#FFF250] to-[#9b9107] sha m-3 hover:scale-95 transition-all duration-300 rounded-lg border-1 shadow border-black'>
                 <div className='grid grid-cols-2 p-4 gap-4'>
                     <img src="./exp.png" className='w-20 sha h-auto my-auto bg-[#D29EFB] rounded-lg' alt="Experience Icon" />
                     <div className='flex flex-col mr-5 justify-center'>
@@ -15,7 +18,7 @@ export default function Exp():React.ReactNode {
                     </div>
                     </div>
                 </Link>
-            <div className='bg-[#FFF250] m-3 rounded-lg border-1 sha border-black'>
+            <div className='bg-gradient-to-b from-[#FFF250] to-[#9b9107] m-3 rounded-lg border-1 sha border-black'>
                 <Link to="/" className='grid grid-cols-2 hover:scale-95 transition-all duration-300 p-4 gap-4'>
                     <img src="./proj.png" className='w-20 sha h-auto my-auto bg-[#D29EFB] rounded-lg' alt="Experience Icon" />
                     <div className='flex flex-col mr-5 justify-center'>
@@ -24,7 +27,7 @@ export default function Exp():React.ReactNode {
                     </div>
                     </Link>
             </div>
-            <div className='bg-[#FFF250] m-3 rounded-lg border-1 sha border-black'>
+            <div className='bg-gradient-to-b from-[#FFF250] to-[#9b9107] m-3 rounded-lg border-1 sha border-black'>
                 <Link to="/" className='grid hover:scale-95 transition-all duration-300 grid-cols-2 p-4 gap-4'>
                     <img src="./cln.png" className='w-20 sha h-auto my-auto bg-[#D29EFB] rounded-lg' alt="Experience Icon" />
                     <div className='flex flex-col justify-center'>
