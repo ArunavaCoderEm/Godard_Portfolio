@@ -3,6 +3,7 @@ import Hero from '../Components/Hero'
 import Exp from '../Components/Exp'
 import About from './About'
 import Skills from './Skills'
+import Projects from './Projects'
 
 export default function Home():React.ReactNode {
   return (
@@ -11,6 +12,7 @@ export default function Home():React.ReactNode {
     <Exp />
     <About />
     <Skills />
+    <Projects />
     </>
   )
 }

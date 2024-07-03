@@ -5,7 +5,7 @@ export default function Hero():React.ReactNode {
     <>
     <div className='grid grid-cols-1 gap-y-10'>
     <div className="h-screen hidden lg:flex absolute w-screen overflow-hidden justify-center items-center">
-        <h1 className="text-center bg-clip-text text-transparent bg-gradient-to-b from-yellow-200 to-white font-extrabold tracking-widest txt opacity-20 selection:bg-[#FFF250]">GODARD</h1>
+        <h1 className="text-center bg-clip-text text-transparent bg-gradient-to-b from-yellow-400 to-white font-extrabold tracking-widest txt opacity-20 selection:bg-[#FFF250]">GODARD</h1>
     </div>
     <button className="flex items-center w-32 absolute shaw right-0 left-0 mx-auto my-2 backdrop-blur-sm bg-black/30 text-white font-semibold px-4 py-1 rounded-full shadow-lg focus:outline-none">
         <span className="mr-2">✨</span> Home <span className="ml-2">✨</span>
@@ -15,7 +15,7 @@ export default function Hero():React.ReactNode {
             <h1 className="text-xl font-thin cursor-pointer hidden tracking-tight lg:flex h-[85vh] py-1 mb-1 right-0 text-[#FFF250] vertical-text">SCROLL DOWN</h1>
         </div>
         <div className='flex justify-center items-center'>
-        <h1 className='text-center text-5xl bg-clip-text text-transparent bg-gradient-to-b from-yellow-200 to-white font-extrabold mt-3 selection:bg-[#FFF250] mukta-bold'>
+        <h1 className='text-center text-5xl bg-clip-text text-transparent bg-gradient-to-b from-yellow-400 to-white font-extrabold mt-3 selection:bg-[#FFF250] mukta-bold'>
         .Design in mind to code in reality.
         </h1>
         </div>
