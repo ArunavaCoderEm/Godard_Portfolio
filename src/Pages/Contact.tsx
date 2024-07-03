@@ -13,7 +13,7 @@ const ContactForm = ():React.ReactNode => {
         <div className="w-full md:w-1/3 bg-[#121316] text-white p-6 flex flex-col items-start justify-center">
           <h2 className="text-xl font-semibold mb-4">Contact Information</h2>
           <p className="text-sm mb-2">
-            <span className="font-semibold">Email:</span> meard@gmail.com
+            <span className="font-semibold">Email:</span> meard06@gmail.com
           </p>
           <p className="text-sm">
             <span className="font-semibold">Phone:</span> +91 8695260699
@@ -22,13 +22,16 @@ const ContactForm = ():React.ReactNode => {
 
 
         <div className="w-full md:w-2/3 p-6">
-          <h2 className="text-xl font-semibold mb-4 text-gray-800">Get in Touch</h2>
-          <form className="space-y-4">
+          <h2 className="text-xl font-extrabold mukta mb-4 text-gray-800">Get in Touch :</h2>
+          <form className="space-y-4" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="041feffe-0e52-4a22-858e-514df26fcbba"/>
             <div>
               <label className="block text-sm font-semibold mb-2 text-gray-700" htmlFor="name">Name</label>
               <input
                 id="name"
-                type="text"
+                type="name"
+                name="name"
+                required
                 className="w-full px-4 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none"
                 placeholder="Your Name"
               />
@@ -38,6 +41,8 @@ const ContactForm = ():React.ReactNode => {
               <input
                 id="email"
                 type="email"
+                name="email"
+                required
                 className="w-full px-4 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none"
                 placeholder="your-email@example.com"
               />
@@ -46,6 +51,8 @@ const ContactForm = ():React.ReactNode => {
               <label className="block text-sm font-semibold mb-2 text-gray-700" htmlFor="message">Message</label>
               <textarea
                 id="message"
+                name="message"
+                required
                 className="w-full px-4 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none"
                 rows={4}
                 placeholder="Your message..."
