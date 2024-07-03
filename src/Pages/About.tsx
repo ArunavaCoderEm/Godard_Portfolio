@@ -49,22 +49,22 @@ const AboutMe = ():React.ReactNode => {
         </div>
       </div>
     </div>
-      <div className='bg-gradient-to-bl from-[#D29EFB] to-[#6e0eb7] absolute right-0 left-0 mx-auto w-80 p-4 rounded-lg mt-[-35px]'>
+      <div className='bg-gradient-to-bl sha from-[#D29EFB] to-[#6e0eb7] absolute right-0 left-0 mx-auto w-80 p-4 rounded-lg mt-[-30px]'>
       <h2 className='text-center text-xl bg-clip-text text-transparent bg-gradient-to-bl from-gray-800 to-black font-extrabold mukta mb-3'>My Socials</h2>
         <div className='grid grid-cols-5 gap-4'>
-          <Link to="/">
+          <Link to="/" className='transition-all duration-200 hover:scale-90'>
             <img src="./github.png" className='w-10' alt="" />
           </Link>
-          <Link to="/">
+          <Link to="/" className='transition-all duration-200 hover:scale-90'>
             <img src="./li.png" className='w-10 rounded-full' alt="" />
           </Link>
-          <Link to="/">
+          <Link to="/" className='transition-all duration-200 hover:scale-90'>
             <img src="./insta.jpg" className='w-10 rounded-full' alt="" />
           </Link>
-          <Link to="/">
+          <Link to="/" className='transition-all duration-200 hover:scale-90'>
             <img src="./x.jpg" className='w-10 rounded-full' alt="" />
           </Link>
-          <Link to="/">
+          <Link to="/" className='transition-all duration-200 hover:scale-90'>
             <img src="./disc.png" className='w-10 rounded-full' alt="" />
           </Link>
         </div>
