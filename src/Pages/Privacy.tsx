@@ -6,9 +6,9 @@ const PrivacyPolicyPage = ():React.ReactNode => {
       <div className="max-w-3xl mx-auto p-8">
         <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
         <p className="mb-4">
-          YourPrivacyPolicy.com is committed to protecting your privacy. This Privacy Policy
+          meard.vercel.app is committed to protecting your privacy. This Privacy Policy
           explains how we collect, use, disclose, and safeguard your information when you visit our
-          website YourPrivacyPolicy.com, including any other media form, media channel, mobile
+          website meard.vercel.app, including any other media form, media channel, mobile
           website, or mobile application related or connected thereto (collectively, the
           “Site”). Please read this privacy policy carefully. If you do not agree with the terms
           of this privacy policy, please do not access the site.
@@ -22,12 +22,12 @@ const PrivacyPolicyPage = ():React.ReactNode => {
           continued use of the Site after the date such revised Privacy Policy is posted.
         </p>
         <p className="mb-4">
-          If you have any questions about this Privacy Policy, please contact us at:
-          <a href="/" className="text-[#FFF250] hover:underline">contact@yourprivacypolicy.com</a>.
+          If you have any questions about this Privacy Policy, please contact us at :
+          <a href="/" className="text-[#FFF250] hover:underline"> contact @meard.vercel.app</a>.
         </p>
       </div>
       <div className="flex w-full flex-col items-center justify-center gap-5 border-t border-gray-900/5 bg-[#121316] dark:border-white/5">
-        <h1 className="text-white p-3">© 2024 YourWebsiteName. All rights reserved.</h1>
+        <h1 className="text-white p-3">© 2024 Arunava Dutta. All rights reserved.</h1>
         <div className="flex items-center">
           <h1 className="text-[#FFF250] p-3">Developed by Arunava Dutta</h1>
           <span className="text-gray-400 mx-2">|</span>
