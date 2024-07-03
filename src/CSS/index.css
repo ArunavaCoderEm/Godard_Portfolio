@@ -12,6 +12,10 @@
     justify-content: center;
     align-items: flex-end;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
   
   .loading-bar {
     width: 20px;

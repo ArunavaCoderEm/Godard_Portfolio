@@ -38,7 +38,7 @@ const AboutMe = ():React.ReactNode => {
             </li>
           </p>
           <div className="mt-6">
-            <button className="px-4 py-2 bg-[#D29EFB] rounded-full font-semibold mukta hover:translate-x-2 transition-all duration-300 focus:outline-none mukta tracking-wide border-2 border-black">
+            <button className="px-4 py-2 bg-[#D29EFB] rounded-md font-semibold mukta hover:translate-x-2 transition-all duration-300 focus:outline-none mukta tracking-wide border-2 border-black">
               My Resume
             </button>
           </div>
