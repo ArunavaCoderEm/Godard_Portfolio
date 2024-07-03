@@ -6,7 +6,7 @@ export default function Hero():React.ReactNode {
 
   return (
     <>
-    <div className='grid grid-cols-1 gap-y-10'>
+    <div className='grid grid-cols-1 gap-y-10 mt-20'>
     <div className="h-screen hidden lg:flex absolute w-screen overflow-hidden justify-center items-center">
         <h1 className="text-center bg-clip-text text-transparent bg-gradient-to-b from-yellow-400 to-white font-extrabold tracking-widest txt opacity-20 selection:bg-[#FFF250]">GODARD</h1>
     </div>
