@@ -123,7 +123,7 @@
 
   .ctaac {
     width: 100%;
-    background: #D29EFB;
+    background: linear-gradient(180deg,#D29EFB, #5c049f);
   }
 
   .cta:active {
