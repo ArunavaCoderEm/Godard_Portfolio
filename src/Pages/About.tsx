@@ -41,7 +41,7 @@ const AboutMe = ():React.ReactNode => {
           </p>
           <div className="mt-6">
           <Link 
-          to={"https://drive.google.com/file/d/1XMGBFenygbT2zcsd0nh9NcBU0z2FCZm_/view?usp=sharing"} 
+          to={"https://drive.google.com/file/d/1aPWVMnXyPKCn_2wuS9aA_W4IbmVrlca6/view?usp=sharing"} 
           target='_blank'
           className="group/button sha relative inline-flex items-center justify-center overflow-hidden rounded-md bg-[#D29EFB] px-4 py-1.5 text-xl text-black border-2 border-black transition-all duration-300 ease-in-out hover:scale-105 mukta font-bold hover:shadow-lg hover:shadow-red-500/30">
             <span className="text-sm">My Resume</span>
