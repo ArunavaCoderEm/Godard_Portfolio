@@ -97,7 +97,7 @@ export const tools : LabeledValue[] = [
     },
     {
         img : "./andst.png",
-        label : "And. Studio"
+        label : "Studio"
     },
     {
         img : "./vs-code.png",
