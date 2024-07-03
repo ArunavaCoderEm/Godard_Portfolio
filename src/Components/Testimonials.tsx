@@ -18,19 +18,19 @@ const testimonials : testlist[] = [
     link : "https://www.linkedin.com/in/sohan-karfa/"
   },
   {
-    text: 'Another testimonial goes here. Praising your product or service and expressing satisfaction.',
+    text: "Very supportive friend and teammate! Impressed by the innovative and original approach.",
     author: 'Satyaki Dey',
     image: './satyaki.jpg',
     link : "https://www.linkedin.com/in/satyaki-dey/"
   },
   {
-    text: 'Third testimonial goes here. Praising your product or service and expressing satisfaction.',
+    text: 'Incredibly supportive! Completely satisfied! Loved the innovative approach.',
     author: 'Priyanshu Dutta',
     image: './priyan.jpg',
     link : "https://www.linkedin.com/in/priyanshudutta04/   "
   },
   {
-    text: 'Fourth testimonial goes here. Praising your product or service and expressing satisfaction.',
+    text: 'Quite beneficial! Quite satisfied with the creative and original approach',
     author: 'Rishi Bhattasali',
     image: './rishi.jpg',
     link : "https://www.linkedin.com/in/rishi-bhattasali-8ab905253/"
