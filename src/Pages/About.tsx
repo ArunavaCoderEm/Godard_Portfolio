@@ -1,5 +1,6 @@
 import React from 'react';
 import TextRotate from '../Components/Rottext';
+import { Link } from 'react-router-dom';
 
 const AboutMe = ():React.ReactNode => {
   return (
@@ -8,7 +9,7 @@ const AboutMe = ():React.ReactNode => {
         <span className="mr-2">✨</span> About <span className="ml-2">✨</span>
     </button>
     <div className="bg-gray-100 flex items-center pt-5 justify-center min-h-screen py-5">
-      <div className="max-w-4xl bg-white shadow-lg sha rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-2">
+      <div className="max-w-4xl my-5 bg-white shadow-lg sha rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-2">
         <div className="md:flex-shrink-0 sha">
           <img
             className="h-[30rem] w-full object-cover"
@@ -48,6 +49,26 @@ const AboutMe = ():React.ReactNode => {
         </div>
       </div>
     </div>
+      <div className='bg-gradient-to-bl from-[#D29EFB] to-[#6e0eb7] absolute right-0 left-0 mx-auto w-80 p-4 rounded-lg mt-[-35px]'>
+      <h2 className='text-center text-xl bg-clip-text text-transparent bg-gradient-to-bl from-gray-800 to-black font-extrabold mukta mb-3'>My Socials</h2>
+        <div className='grid grid-cols-5 gap-4'>
+          <Link to="/">
+            <img src="./github.png" className='w-10' alt="" />
+          </Link>
+          <Link to="/">
+            <img src="./li.png" className='w-10 rounded-full' alt="" />
+          </Link>
+          <Link to="/">
+            <img src="./insta.jpg" className='w-10 rounded-full' alt="" />
+          </Link>
+          <Link to="/">
+            <img src="./x.jpg" className='w-10 rounded-full' alt="" />
+          </Link>
+          <Link to="/">
+            <img src="./disc.png" className='w-10 rounded-full' alt="" />
+          </Link>
+        </div>
+      </div>
     </>
   );
 };
