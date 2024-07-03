@@ -14,7 +14,7 @@ const AboutMe = ():React.ReactNode => {
         <div className="md:flex-shrink-0 p-5 bg-[#121316] sha">
           <img
             className="h-[30rem] w-full shaw rounded-lg object-cover"
-            src="./meab.JPG"
+            src="./meabb.jpg"
             alt="Profile"
             />
         </div>

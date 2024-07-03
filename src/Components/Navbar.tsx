@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Navbar(props:any) {
+export default function Navbar(props:any):React.ReactNode {
   const [menuOpen, setMenuOpen] = useState(false);
   const [menu, setMenu] = useState("home");
 
