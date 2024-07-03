@@ -50,7 +50,7 @@ export default function Navbar(props:any):React.ReactNode {
                 <span className='relative z-10'>skills</span>
             </a>
             <a 
-            onClick={() => setmenu("projets")}
+            onClick={() => setmenu("projects")}
             href={props.projects} className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'projects' ? "ctaac" : "cta"}`}>
                 <span className='relative z-10'>Projects</span>
             </a>

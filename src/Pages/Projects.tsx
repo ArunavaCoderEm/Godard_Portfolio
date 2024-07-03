@@ -4,20 +4,9 @@ import { ProjLbImg, projectsList } from '../Context/Project'
 import { Link } from 'react-router-dom'
 import TestimonialCarousel from '../Components/Testimonials'
 
-import AOS from 'aos'
-import 'aos/dist/aos.css'; 
-
 export default function Projects():React.ReactNode {
 
   const [pro, setpro] = useState<ProjLbImg[]>([])
-
-  useEffect(() => {
-    AOS.init({
-      duration: 500,
-      easing: 'ease-in',
-      once: false
-    });
-  }, []);
 
   useEffect(() => {
     setpro(projectsList)
@@ -28,7 +17,7 @@ export default function Projects():React.ReactNode {
       <button className="flex shaw items-center mt-28 w-36 absolute right-0 left-0 mx-auto backdrop-blur-sm bg-black/60 text-white font-semibold px-4 py-1 rounded-full shadow-lg sha focus:outline-none">
         <span className="mr-2">✨</span> Projects <span className="ml-2">✨</span>
     </button>
-    <div id='projects' data-aos-offset="50" data-aos="fade-up" className='mt-44 grid lg:grid-cols-4 pb-5 sm:grid-cols-1'>
+    <div id='projects' className='mt-44 grid lg:grid-cols-4 pb-5 sm:grid-cols-1'>
         {pro.map((item, index) => (
                 <div key={index} className="col-span-1">
                     <Procard 
@@ -43,7 +32,7 @@ export default function Projects():React.ReactNode {
                 </div>
             ))}
     </div>
-    <Link to="/" className='text-white mb-10 mx-auto flex justify-center hover:text-[#FFF250] transition-all duration-300 text-center'>More Projects Are Available On My GitHub</Link>
+    <Link to={"https://github.com/ArunavaCoderEm"} target='_blank' className='text-white mb-10 mx-auto flex justify-center hover:text-[#FFF250] transition-all duration-300 text-center'>More Projects Are Available On My GitHub</Link>
 
       <TestimonialCarousel />
 

@@ -9,11 +9,11 @@ const AboutMe = ():React.ReactNode => {
     <button className="flex items-center my-5 w-32 absolute right-0 left-0 mx-auto backdrop-blur-sm bg-black/60 text-white font-semibold px-4 py-1 rounded-full shadow-lg sha focus:outline-none">
         <span className="mr-2">✨</span> About <span className="ml-2">✨</span>
     </button>
-    <div id='about' className="bg-white flex items-center pt-5 justify-center min-h-screen py-5">
+    <div id='about' className="bg-white flex items-center pt-10 justify-center min-h-screen py-5">
       <div className="max-w-4xl my-5 bg-white shadow-lg sha rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-2">
-        <div className="md:flex-shrink-0 sha">
+        <div className="md:flex-shrink-0 p-5 bg-[#121316] sha">
           <img
-            className="h-[30rem] w-full object-cover"
+            className="h-[30rem] w-full shaw rounded-lg object-cover"
             src="./meab.JPG"
             alt="Profile"
             />
@@ -40,12 +40,15 @@ const AboutMe = ():React.ReactNode => {
             </li>
           </p>
           <div className="mt-6">
-          <button className="group/button sha relative inline-flex items-center justify-center overflow-hidden rounded-md bg-[#D29EFB] px-4 py-1.5 text-xl text-black border-2 border-black transition-all duration-300 ease-in-out hover:scale-105 mukta font-bold hover:shadow-lg hover:shadow-red-500/30">
+          <Link 
+          to={"https://drive.google.com/file/d/1XMGBFenygbT2zcsd0nh9NcBU0z2FCZm_/view?usp=sharing"} 
+          target='_blank'
+          className="group/button sha relative inline-flex items-center justify-center overflow-hidden rounded-md bg-[#D29EFB] px-4 py-1.5 text-xl text-black border-2 border-black transition-all duration-300 ease-in-out hover:scale-105 mukta font-bold hover:shadow-lg hover:shadow-red-500/30">
             <span className="text-sm">My Resume</span>
             <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
               <div className="relative h-full w-8 bg-white/20" />
             </div>
-          </button>
+          </Link>
           </div>
         </div>
       </div>
