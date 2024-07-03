@@ -3,6 +3,7 @@ import TextRotate from '../Components/Rottext';
 import { Link } from 'react-router-dom';
 
 const AboutMe = ():React.ReactNode => {
+
   return (
     <>
     <button className="flex items-center my-5 w-32 absolute right-0 left-0 mx-auto backdrop-blur-sm bg-black/60 text-white font-semibold px-4 py-1 rounded-full shadow-lg sha focus:outline-none">

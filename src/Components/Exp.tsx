@@ -9,7 +9,7 @@ export default function Exp():React.ReactNode {
         <span className="mr-2">✨</span> Works <span className="ml-2">✨</span>
     </button>
         <div className='grid lg:grid-cols-3 mt-10 sm:grid-cols-1'>
-            <Link to="/" className='bg-gradient-to-bl from-[#FFF250] to-[#9b9107] sha m-3 hover:scale-95 transition-all duration-300 rounded-lg border-1 shadow border-black'>
+            <Link to={"https://github.com/ArunavaCoderEm"} target='_black' className='bg-gradient-to-bl from-[#FFF250] to-[#9b9107] sha m-3 hover:scale-95 transition-all duration-300 rounded-lg border-1 shadow border-black'>
                 <div className='grid grid-cols-2 p-4 gap-4'>
                     <img src="./exp.png" className='w-20 sha h-auto my-auto bg-[#D29EFB] rounded-lg' alt="Experience Icon" />
                     <div className='flex flex-col mr-5 justify-center'>
@@ -19,7 +19,7 @@ export default function Exp():React.ReactNode {
                     </div>
                 </Link>
             <div className='bg-gradient-to-bl from-[#FFF250] to-[#9b9107] m-3 rounded-lg border-1 sha border-black'>
-                <Link to="/" className='grid grid-cols-2 hover:scale-95 transition-all duration-300 p-4 gap-4'>
+                <Link to={"https://github.com/ArunavaCoderEm?tab=repositories"} target='_black' className='grid grid-cols-2 hover:scale-95 transition-all duration-300 p-4 gap-4'>
                     <img src="./proj.png" className='w-20 sha h-auto my-auto bg-[#D29EFB] rounded-lg' alt="Experience Icon" />
                     <div className='flex flex-col mr-5 justify-center'>
                         <h1 className='font-extrabold lg:text-4xl text-2xl'><span className='bg-black text-white p-1 rounded-lg mr-3'>30+</span>Cool</h1>
@@ -28,7 +28,7 @@ export default function Exp():React.ReactNode {
                     </Link>
             </div>
             <div className='bg-gradient-to-bl from-[#FFF250] to-[#9b9107] m-3 rounded-lg border-1 sha border-black'>
-                <Link to="/" className='grid hover:scale-95 transition-all duration-300 grid-cols-2 p-4 gap-4'>
+                <Link to={"https://www.linkedin.com/in/arunava-dutta-2b94bb253/"} target='_blank' className='grid hover:scale-95 transition-all duration-300 grid-cols-2 p-4 gap-4'>
                     <img src="./cln.png" className='w-20 sha h-auto my-auto bg-[#D29EFB] rounded-lg' alt="Experience Icon" />
                     <div className='flex flex-col justify-center'>
                         <h1 className='font-extrabold  lg:text-4xl text-2xl text-black'><span className='bg-black text-white p-1 rounded-lg'>5+</span> Happy</h1>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import Page from "./Page"
+import 'aos/dist/aos.css'; 
 import Loader from "./Components/Loader";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -18,7 +19,6 @@ export default function App () :React.ReactNode {
   setTimeout(() => {
     setload(false)
   }, 2500);
-
 
   return (
     <>

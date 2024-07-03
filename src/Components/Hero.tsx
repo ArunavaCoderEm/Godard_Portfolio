@@ -1,6 +1,9 @@
 import React from 'react'
 
+
+
 export default function Hero():React.ReactNode {
+
   return (
     <>
     <div className='grid grid-cols-1 gap-y-10'>
