@@ -24,7 +24,7 @@ export default function MainPage():React.ReactNode {
     <Skills />
     <Projects />
     <Contact />
-    <MinimalSocialsFooter />
+    <MinimalSocialsFooter contact="#contact" />
     </>
   )
 }
