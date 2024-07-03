@@ -5,6 +5,7 @@ import About from './About'
 import Skills from './Skills'
 import Projects from './Projects'
 import Contact from './Contact'
+import MinimalSocialsFooter from '../Components/Footer'
 
 export default function MainPage():React.ReactNode {
   return (
@@ -15,6 +16,7 @@ export default function MainPage():React.ReactNode {
     <Skills />
     <Projects />
     <Contact />
+    <MinimalSocialsFooter />
     </>
   )
 }

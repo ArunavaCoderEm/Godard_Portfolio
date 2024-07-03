@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Home from './Pages/Home'
+import Home from './Pages/Mainpage'
 import Navbar from './Components/Navbar'
 import BackgroundGrid from './Components/Bgmark'
 
