@@ -1,15 +1,28 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function Navbar(props:any):React.ReactNode {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [menu, setMenu] = useState("home");
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const [menu, setMenu] = useState<string>("home");
+  const [hei, sethei] = useState<number>(0);
 
-  const toggleMenu = () => {
+
+  const toggleMenu = ():void => {
     setMenuOpen(!menuOpen);
   };
 
+
+  useEffect(() => {
+    const handleScroll = () => {
+        sethei(window.scrollY || document.documentElement.scrollTop);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+}, []);
+
   return (
-    <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+    <header className={`transition-all duration-300 ${(hei > 150) ? "backdrop-blur-sm bg-white/60" : "bg-white"} shadow-md fixed top-0 left-0 right-0 z-50`}>
       <div className="flex h-16 items-center px-4 md:px-6 w-full">
         <a
           href={props.home}
@@ -35,22 +48,22 @@ export default function Navbar(props:any):React.ReactNode {
           <nav className="flex selection:bg-[#FFF250] items-center gap-4 sm:gap-6">
             <a
               onClick={() => setMenu("home")}
-              href={props.home} className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'home' ? "ctaac" : "cta"}`}>
+              href={props.home} className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'home' ? "ctaac text-white underline underline-offset-4" : "cta text-black"}`}>
               <span className='relative z-10'>Home</span>
             </a>
             <a
               onClick={() => setMenu("about")}
-              href={props.about} className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'about' ? "ctaac" : "cta"}`}>
+              href={props.about} className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'about' ? "ctaac text-white underline underline-offset-4" : "cta text-black"}`}>
               <span className='relative z-10'>About</span>
             </a>
             <a
               onClick={() => setMenu("skills")}
-              href={props.skills} className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'skills' ? "ctaac" : "cta"}`}>
+              href={props.skills} className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'skills' ? "ctaac text-white underline underline-offset-4" : "cta text-black"}`}>
               <span className='relative z-10'>Skills</span>
             </a>
             <a
               onClick={() => setMenu("projects")}
-              href={props.projects} className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'projects' ? "ctaac" : "cta"}`}>
+              href={props.projects} className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'projects' ? "ctaac text-white underline underline-offset-4" : "cta text-black"}`}>
               <span className='relative z-10'>Projects</span>
             </a>
           </nav>
@@ -71,22 +84,22 @@ export default function Navbar(props:any):React.ReactNode {
           <nav className="flex px-4 flex-col rounded-lg items-center gap-4 py-4">
             <a
               onClick={() => setMenu("home")}
-              href={props.home} className={`text-sm rounded-lg p-2 ${menu === 'home' ? "bg-black sha text-white" : "bg-[#D29EFB]"} w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}>
+              href={props.home} className={`text-sm rounded-lg p-2 ${menu === 'home' ? "bg-black sha underline underline-offset-4 text-white" : "bg-[#D29EFB]"} w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}>
               Home
             </a>
             <a
               onClick={() => setMenu("about")}
-              href={props.about} className={`text-sm p-2 rounded-lg ${menu === 'about' ? "bg-black sha text-white" : "bg-[#D29EFB]"} w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}>
+              href={props.about} className={`text-sm p-2 rounded-lg ${menu === 'about' ? "bg-black sha underline underline-offset-4 text-white" : "bg-[#D29EFB]"} w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}>
               About
             </a>
             <a
               onClick={() => setMenu("skills")}
-              href={props.skills} className={`text-sm p-2 rounded-lg ${menu === 'skills' ? "bg-black sha text-white" : "bg-[#D29EFB]"} w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}>
+              href={props.skills} className={`text-sm p-2 rounded-lg ${menu === 'skills' ? "bg-black sha underline underline-offset-4 text-white" : "bg-[#D29EFB]"} w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}>
               Skills
             </a>
             <a
               onClick={() => setMenu("projects")}
-              href={props.projects} className={`text-sm p-2 rounded-lg ${menu === 'projects' ? "bg-black sha text-white" : "bg-[#D29EFB]"} w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}>
+              href={props.projects} className={`text-sm p-2 rounded-lg ${menu === 'projects' ? "bg-black sha underline underline-offset-4 text-white" : "bg-[#D29EFB]"} w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}>
               Projects
             </a>
             <a
