@@ -2,7 +2,18 @@ import React, { useEffect, useState } from 'react';
 import Skillcard from '../Components/Skillcard';
 import { LabeledValue, skills, tools } from '../Context/SkillsInt';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Skills = ():React.ReactNode => {
+
+    
+  useEffect(() => {
+    AOS.init({
+        once : false,
+        delay: 0
+    });
+  }, []); 
 
   const [activeTab, setActiveTab] = useState<string>("skills");
 
@@ -55,7 +66,7 @@ const Skills = ():React.ReactNode => {
             ?
             <div className='grid gap-0 lg:grid-cols-5 grid-cols-4'>
             {skill.map((item, index) => (
-                <div key={index} className="col-span-1">
+                <div key={index} className="col-span-1"  data-aos="fade-in" data-aos-delay={`${index*1}`} data-aos-once="false">
                     <Skillcard 
                         img = {item.img}
                         lbl = {item.label}
@@ -68,7 +79,7 @@ const Skills = ():React.ReactNode => {
 
             <div className='grid gap-0 lg:grid-cols-5 grid-cols-4'>
             {tool.map((item, index) => (
-                <div key={index} className="col-span-1">
+                <div key={index} className="col-span-1" data-aos-delay={`${index*1}`} data-aos="fade-in" data-aos-once="false">
                     <Skillcard 
                         img = {item.img}
                         lbl = {item.label}
