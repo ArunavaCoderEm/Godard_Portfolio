@@ -64,7 +64,7 @@ const TestimonialCarousel = ():React.ReactNode => {
     <>
     <div className="bg-gradient-to-bl sha from-[#D29EFB] to-[#6e0eb7] absolute right-0 left-0 mx-auto w-5/6 h-60 p-2 flex rounded-lg mt-10 flex-col items-center justify-center">
       <section className="py-2 md:py-3 w-full">
-        <h2 className='text-center text-xl bg-clip-text text-transparent bg-gradient-to-bl from-gray-800 to-black font-extrabold mukta mb-2'>Testimonials</h2>
+      <h2 className='text-center text-xl font-extrabold backdrop-blur-sm bg-white/30 inssha p-1 rounded-full mukta mb-3 w-72 mx-auto'>🔈 Testimonials 🔈</h2>
         <div className="w-full max-w-2xl flex flex-col mx-auto">
           <AnimatePresence mode="popLayout">
             <motion.div
