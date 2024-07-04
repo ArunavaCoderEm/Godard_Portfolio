@@ -13,28 +13,28 @@ const testimonials : testlist[] = [
   {
     text: "Very supportive teammate! Impressed by innovative and original approach.",
     name: 'Satyaki Dey',
-    position: 'Product Manager, Intel',
+    position: 'Devops, App, Web Developer',
     imgSrc: './satyaki.jpg',
     link: "https://www.linkedin.com/in/satyaki-dey/"
   },
   {
     text: "Very Helpful ! Sufficiently satisfied ! Uniqueness is the best part.",
     name: 'Sohan Karfa',
-    position: 'UX Designer, Netflix',
+    position: 'App developer, Coder',
     imgSrc: './sohan.jpg',
     link: "https://www.linkedin.com/in/sohan-karfa/"
   },
   {
     text: "Incredibly supportive! Loved the innovative approach.",
     name: 'Priyanshu Dutta',
-    position: 'Data Analyst, Spotify',
+    position: 'App, ML Engineer',
     imgSrc: './priyan.jpg',
     link: "https://www.linkedin.com/in/priyanshudutta04/"
   },
   {
     text: "Quite beneficial! Quite satisfied with the creative and original approach",
     name: 'Rishi Bhattasali',
-    position: 'Data Analyst, Spotify',
+    position: 'ML Engineer',
     imgSrc: './rishi.jpg',
     link: "https://www.linkedin.com/in/rishi-bhattasali-8ab905253/"
   },
