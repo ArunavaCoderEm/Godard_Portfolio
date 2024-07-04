@@ -186,8 +186,8 @@
   min-height: 370px;
   border-radius: 20px;
   background: #212121;
-  box-shadow: 5px 5px 8px #1b1b1b,
-             -5px -5px 8px #272727;
+  box-shadow: 5px 5px 8px #fff35033,
+             -5px -5px 8px #fff35071;
   transition: 0.4s;
 }
 

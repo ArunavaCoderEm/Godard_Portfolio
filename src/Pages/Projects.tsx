@@ -32,7 +32,7 @@ export default function Projects():React.ReactNode {
                 </div>
             ))}
     </div>
-    <Link to={"https://github.com/ArunavaCoderEm"} target='_blank' className='text-white mb-10 mx-auto flex justify-center hover:text-[#FFF250] transition-all duration-300 text-center inssha w-96 p-1 rounded-full hover:translate-y-1'>More Projects Are Available On My GitHub</Link>
+    <Link to={"https://github.com/ArunavaCoderEm"} target='_blank' className='text-white mb-10 mx-auto flex justify-center hover:text-[#FFF250] transition-all duration-300 text-center inssha w-96 p-1 rounded-full hover:translate-y-1'>🎁 More Projects Are Available On My GitHub 🎁</Link>
 
       <TestimonialCarousel />
 
