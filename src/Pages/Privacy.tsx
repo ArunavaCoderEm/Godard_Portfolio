@@ -32,11 +32,7 @@ const PrivacyPolicyPage = ():React.ReactNode => {
           <h1 className="text-[#FFF250] p-3">Developed by Arunava Dutta</h1>
           <span className="text-gray-400 mx-2">|</span>
           <a href="/" className="text-[#FFF250] hover:underline">
-            Contact
-          </a>
-          <span className="text-gray-400 mx-2">|</span>
-          <a href="/" className="text-[#FFF250] hover:underline">
-            Privacy Policy
+            Website
           </a>
         </div>
       </div>

@@ -10,13 +10,13 @@ const ContactForm = ():React.ReactNode => {
 
       <div className="flex flex-col md:flex-row justify-center items-start w-full max-w-4xl bg-gradient-to-bl from-[#FFF250] to-[#a09606] sha rounded-lg overflow-hidden">
 
-        <div className="w-full md:w-1/3 bg-[#121316] text-white p-6 flex flex-col items-start justify-center">
-          <h2 className="text-xl font-semibold mb-4">Contact Information</h2>
-          <p className="text-sm mb-2">
-            <span className="font-semibold">Email:</span> meard06@gmail.com
+        <div className="w-full md:w-1/3 lg:h-64 rounded-lg sha bg-[#121316] text-white p-6 flex flex-col items-start justify-center">
+          <h2 className="text-xl font-extrabold mb-4">My Contact Info :</h2>
+          <p className="text-sm mb-2 sm:text-center text-left">
+            <span className="font-semibold text-md mr-4">Email :</span> meard06@gmail.com
           </p>
-          <p className="text-sm">
-            <span className="font-semibold">Phone:</span> +91 8695260699
+          <p className="text-sm sm:text-center text-left">
+            <span className="font-semibold text-md mr-3">Phone :</span> +91 8695260699
           </p>
         </div>
 
