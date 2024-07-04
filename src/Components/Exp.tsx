@@ -37,7 +37,7 @@ export default function Exp():React.ReactNode {
                     </Link>
             </div>
         </div>
-        <h1 className='text-center text-lg my-5 mukta-medium'>Everything is nothing and nothing is eveything<br/><span className='font-bold mukta-bold'>.Lord Shiva.</span></h1>
+        <h1 className='text-center text-lg my-5 mukta-medium'>"Everything is nothing and nothing is eveything"<br/><span className='font-bold mukta-bold'>.Lord Shiva.</span></h1>
     </div>
     </>
   )
