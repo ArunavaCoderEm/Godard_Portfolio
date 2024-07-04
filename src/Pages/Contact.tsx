@@ -8,7 +8,7 @@ const ContactForm = ():React.ReactNode => {
         <span className="mr-2">✨</span> Contact <span className="ml-2">✨</span>
       </button>
 
-      <div className="flex flex-col md:flex-row justify-center items-start w-full max-w-4xl bg-gradient-to-bl from-[#FFF250] to-[#a09606] sha rounded-lg overflow-hidden">
+      <div className="flex flex-col p-2 md:flex-row justify-center items-start w-full max-w-4xl bg-gradient-to-bl from-[#FFF250] to-[#a09606] sha rounded-lg overflow-hidden">
 
         <div className="w-full md:w-1/3 lg:h-64 rounded-lg sha bg-[#121316] text-white p-6 flex flex-col items-start justify-center">
           <h2 className="text-xl font-extrabold mb-4">My Contact Info :</h2>
