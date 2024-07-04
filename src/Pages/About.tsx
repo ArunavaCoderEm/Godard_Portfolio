@@ -6,11 +6,11 @@ const AboutMe = ():React.ReactNode => {
 
   return (
     <>
-    <button className="flex items-center my-5 w-32 absolute right-0 left-0 mx-auto backdrop-blur-sm bg-black/60 text-white font-semibold px-4 py-1 rounded-full shadow-lg sha focus:outline-none">
+    <button className="flex items-center mt-3 w-32 absolute right-0 left-0 mx-auto backdrop-blur-sm bg-black/60 text-white font-semibold px-4 py-1 rounded-full shadow-lg sha focus:outline-none">
         <span className="mr-2">✨</span> About <span className="ml-2">✨</span>
     </button>
     <div id='about' className="bg-white flex items-center pt-10 justify-center min-h-screen py-5">
-      <div className="max-w-4xl my-5 bg-white shadow-lg sha rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-2">
+      <div className="max-w-6xl my-5 bg-white shadow-lg sha rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-2">
         <div className="md:flex-shrink-0 p-5 bg-gray-100 sha">
           <img
             className="h-[30rem] w-full sha rounded-lg object-cover"
@@ -18,7 +18,8 @@ const AboutMe = ():React.ReactNode => {
             alt="Profile"
             />
         </div>
-        <div className="p-8 bg-gradient-to-bl from-[#FFF250] to-[#a09606]">
+        <div className='p-2'>
+        <div className="p-8 bg-gradient-to-bl rounded-lg sha from-[#FFF250] to-[#a09606]">
           <div className="uppercase tracking-wide text-xl text-black font-extrabold mukta">Hello 👋🏼 !</div>
           <h1 className="mt-2 text-2xl leading-tight font-medium text-black"><span className='text-white font-extrabold p-1 mukta drop-shadow-lg'>I am</span> Arunava Dutta.</h1>
           <div className='py-2 mukta'>
@@ -33,10 +34,19 @@ const AboutMe = ():React.ReactNode => {
             Enjoys turning designs into code and is eager to learn new skills, tools, and languages.
             </li>
             <li className='list-disx'>
+            I also have experience in building GUIs using python.
+            </li>
+            <li className='list-disx'>
             Experienced in solo full-stack projects and has participated in hackathons.
             </li>
             <li className='list-disx'>
             Often wins hackathons with team contributions.
+            </li>
+            <li className='list-disx'>
+            Learning app development in flutter - dart.
+            </li>
+            <li className='list-disx'>
+            Learning DevOps.
             </li>
           </p>
           <div className="mt-6">
@@ -51,6 +61,7 @@ const AboutMe = ():React.ReactNode => {
           </Link>
           </div>
         </div>
+      </div>
       </div>
     </div>
       <div className='bg-gradient-to-bl sha from-[#D29EFB] to-[#6e0eb7] absolute right-0 left-0 mx-auto w-80 p-4 rounded-lg mt-[-30px]'>
