@@ -64,6 +64,10 @@
     filter: drop-shadow(0 0 10px #ffffffc1);
   }
 
+ .inssha {
+  box-shadow: inset 0px 0px 10px #fff;
+ }
+
   .mukta-medium {
     font-family: "Mukta", sans-serif;
     font-weight: 500;

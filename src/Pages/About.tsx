@@ -11,9 +11,9 @@ const AboutMe = ():React.ReactNode => {
     </button>
     <div id='about' className="bg-white flex items-center pt-10 justify-center min-h-screen py-5">
       <div className="max-w-4xl my-5 bg-white shadow-lg sha rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-2">
-        <div className="md:flex-shrink-0 p-5 bg-[#121316] sha">
+        <div className="md:flex-shrink-0 p-5 bg-gray-100 sha">
           <img
-            className="h-[30rem] w-full shaw rounded-lg object-cover"
+            className="h-[30rem] w-full sha rounded-lg object-cover"
             src="./meabb.jpg"
             alt="Profile"
             />
@@ -43,7 +43,7 @@ const AboutMe = ():React.ReactNode => {
           <Link 
           to={"https://drive.google.com/file/d/1aPWVMnXyPKCn_2wuS9aA_W4IbmVrlca6/view?usp=sharing"} 
           target='_blank'
-          className="group/button sha relative inline-flex items-center justify-center overflow-hidden rounded-md bg-[#D29EFB] px-4 py-1.5 text-xl text-black border-2 border-black transition-all duration-300 ease-in-out hover:scale-105 mukta font-bold hover:shadow-lg hover:shadow-red-500/30">
+          className="group/button sha relative inline-flex items-center justify-center overflow-hidden rounded-md bg-[#D29EFB] px-4 py-1.5 text-xl text-black border-2 border-black transition-all duration-300 ease-in-out hover:scale-105 mukta font-bold hover:shadow-lg hover:shadow-gray-900/30">
             <span className="text-sm">My Resume</span>
             <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
               <div className="relative h-full w-8 bg-white/20" />
@@ -54,22 +54,22 @@ const AboutMe = ():React.ReactNode => {
       </div>
     </div>
       <div className='bg-gradient-to-bl sha from-[#D29EFB] to-[#6e0eb7] absolute right-0 left-0 mx-auto w-80 p-4 rounded-lg mt-[-30px]'>
-      <h2 className='text-center text-xl bg-clip-text text-transparent bg-gradient-to-bl from-gray-800 to-black font-extrabold mukta mb-3'>My Socials</h2>
+      <h2 className='text-center text-xl font-extrabold backdrop-blur-sm bg-white/30 inssha p-1 rounded-full mukta mb-3'>📱 My Socials 📱</h2>
         <div className='grid grid-cols-5 gap-4'>
           <Link to="https://github.com/ArunavaCoderEm" className='transition-all duration-200 hover:scale-90'>
-            <img src="./github.png" className='w-10' alt="" />
+            <img src="./github.png" className='w-10 shawg' alt="" />
           </Link>
           <Link to="https://www.linkedin.com/in/arunava-dutta-2b94bb253/" className='transition-all duration-200 hover:scale-90'>
-            <img src="./li.png" className='w-10 rounded-full' alt="" />
+            <img src="./li.png" className='w-10 shawg rounded-full' alt="" />
           </Link>
           <Link to="https://www.instagram.com/goduttaem/" className='transition-all duration-200 hover:scale-90'>
-            <img src="./insta.jpg" className='w-10 rounded-full' alt="" />
+            <img src="./insta.jpg" className='w-10 shawg rounded-full' alt="" />
           </Link>
           <Link to="https://x.com/GoDutta" className='transition-all duration-200 hover:scale-90'>
-            <img src="./x.jpg" className='w-10 rounded-full' alt="" />
+            <img src="./x.jpg" className='w-10 shawg rounded-full' alt="" />
           </Link>
           <Link to="https://discord.com/invite/39uaVFMgEH" className='transition-all duration-200 hover:scale-90'>
-            <img src="./disc.png" className='w-10 rounded-full' alt="" />
+            <img src="./disc.png" className='w-10 shawg rounded-full' alt="" />
           </Link>
         </div>
       </div>

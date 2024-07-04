@@ -48,22 +48,22 @@ export default function Navbar(props:any):React.ReactNode {
           <nav className="flex selection:bg-[#FFF250] items-center gap-4 sm:gap-6">
             <a
               onClick={() => setMenu("home")}
-              href={props.home} className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'home' ? "ctaac text-white underline underline-offset-4" : "cta text-black"}`}>
+              href={props.home} className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'home' ? "ctaac text-white underline sha underline-offset-4" : "cta text-black"}`}>
               <span className='relative z-10'>Home</span>
             </a>
             <a
               onClick={() => setMenu("about")}
-              href={props.about} className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'about' ? "ctaac text-white underline underline-offset-4" : "cta text-black"}`}>
+              href={props.about} className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'about' ? "ctaac text-white sha underline underline-offset-4" : "cta text-black"}`}>
               <span className='relative z-10'>About</span>
             </a>
             <a
               onClick={() => setMenu("skills")}
-              href={props.skills} className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'skills' ? "ctaac text-white underline underline-offset-4" : "cta text-black"}`}>
+              href={props.skills} className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'skills' ? "ctaac text-white sha underline underline-offset-4" : "cta text-black"}`}>
               <span className='relative z-10'>Skills</span>
             </a>
             <a
               onClick={() => setMenu("projects")}
-              href={props.projects} className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'projects' ? "ctaac text-white underline underline-offset-4" : "cta text-black"}`}>
+              href={props.projects} className={`text-sm rounded-lg p-2 font-semibold hover:underline underline-offset-4 ${menu === 'projects' ? "ctaac text-white sha underline underline-offset-4" : "cta text-black"}`}>
               <span className='relative z-10'>Projects</span>
             </a>
           </nav>
