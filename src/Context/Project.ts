@@ -39,7 +39,7 @@ export const projectsList: ProjLbImg[] = [
         stack : "MERN TS"
     },
     {
-        label : "Extracto",
+        label : "StudyGenie",
         img : "./ext.png",
         ghlink : "https://github.com/CodeFusers/Client",
         deplink : "https://extracto.vercel.app",
