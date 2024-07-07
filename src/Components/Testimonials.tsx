@@ -57,6 +57,7 @@ const TestimonialSlider = ():React.ReactNode => {
 
   return (
     <main className="flex flex-col items-center  absolute w-5/6 mx-auto rounded-lg h-64 mt-10 bg-gradient-to-bl sha from-[#D29EFB] to-[#6e0eb7] p-1 left-0 right-0 gap-3 overflow-hidden">
+      <div className='text-center text-xl font-extrabold backdrop-blur-sm bg-white/30 inssha p-1 rounded-full mukta my-3'>🔈Testimonials 🔈</div>
       <ul className="relative w-full h-48 rounded-lg p-2 ">
         {testimonials.map((testimonial, index) => (
           <li
@@ -82,7 +83,7 @@ const TestimonialSlider = ():React.ReactNode => {
         {testimonials.map((_, index) => (
           <button
             key={index}
-            className={`w-3 h-3 rounded-full bg-[#FFF250] mx-1 transition-all ${currentIndex === index ? 'w-7' : ''}`}
+            className={`w-3 h-3 mb-4 rounded-full bg-[#FFF250] mx-1 transition-all ${currentIndex === index ? 'w-7' : ''}`}
             onClick={() => scrollTo(index)}
           ></button>
         ))}

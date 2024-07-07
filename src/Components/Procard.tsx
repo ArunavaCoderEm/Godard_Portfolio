@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Procard(props:any):React.ReactNode {
   return (
     <>
-    <div className="card mx-auto my-4 shaw h-[510px] border-2 border-[#FFF250] flex flex-col justify-between">
+    <div className="card mx-auto my-4 shaw h-[510px] border-2 border-[#8c8306] flex flex-col justify-between">
         <div>
             <div className="card-image shay">
                 <img src={props.img} className='rounded-lg shay overflow-hidden h-40' alt="" />
