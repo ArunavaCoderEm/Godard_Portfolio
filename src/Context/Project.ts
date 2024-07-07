@@ -41,8 +41,8 @@ export const projectsList: ProjLbImg[] = [
     {
         label : "StudyGenie",
         img : "./ext.png",
-        ghlink : "https://github.com/CodeFusers/Client",
-        deplink : "https://extracto.vercel.app",
+        ghlink : "https://github.com/CodeFusers/frontend",
+        deplink : "https://studygenie-cf.vercel.app",
         auth: "Arunava Dutta",
         desc : "Our website offers PDF, text, and YouTube video uploads to assist students with last-minute studies. It provides well-detailed notes, summaries, and a variety of questions and answers generated from our custom-built model.",
         stack : "MERN FB"
