@@ -30,7 +30,7 @@ const Skills = ():React.ReactNode => {
             My expertise lies in front-end development, creating engaging user interfaces for websites and apps. I'm also comfortable with back-end development, giving me a broader skillset. To stay sharp, I tackle competitive coding challenges on platforms like HackerRank (5-⭐). It's a great way to learn, grow, and enjoy solving problems !
             </h3>
             
-            <div className='my-2'><img src="https://leetcard.jacoblin.cool/Arunava_Dutta?theme=nord&font=raleway&radius=10" /></div>
+            <div className='my-2'><img src="https://leetcard.jacoblin.cool/Arunava_Dutta?theme=dark&font=raleway&radius=10" /></div>
             <div className='w-80 mt-5 flex items-center justify-center'>
             <button 
                 onClick={() => setActiveTab('skills')}
