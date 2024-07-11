@@ -27,7 +27,7 @@ const Skills = ():React.ReactNode => {
             What Are My Programming Skills ?
             </h1>
             <h3 className='px-5 my-2 text-gray-400 mukta font-normal rounded-lg p-5'>
-            My expertise lies in front-end development, creating engaging user interfaces for websites and apps. I'm also comfortable with back-end development, giving me a broader skillset. To stay sharp, I tackle competitive coding challenges on platforms like HackerRank (5-⭐). It's a great way to learn, grow, and enjoy solving problems !
+            My expertise lies in front-end development, creating engaging user interfaces for websites and apps. I'm also comfortable with back-end development, giving me a broader skillset. To stay sharp, I tackle competitive coding challenges on platforms like HackerRank (5-⭐) and LeetCode. It's a great way to learn, grow, and enjoy solving problems !
             </h3>
             
             <div className='my-2'><img src="https://leetcard.jacoblin.cool/Arunava_Dutta?theme=dark&font=raleway&radius=10" /></div>
