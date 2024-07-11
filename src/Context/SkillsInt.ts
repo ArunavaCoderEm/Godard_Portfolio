@@ -105,7 +105,7 @@ export const tools : LabeledValue[] = [
     },
     {
         img : "./vs-code.png",
-        label : "VS Code"
+        label : "Code"
     },
     {
         img : "./powershell.png",
