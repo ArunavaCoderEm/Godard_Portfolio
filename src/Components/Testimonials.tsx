@@ -40,7 +40,7 @@ const testimonials: Testlist[] = [
   },
 ];
 
-const TestimonialSlider = () => {
+const TestimonialSlider = ():React.ReactNode => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const scrollTo = (index: number) => {

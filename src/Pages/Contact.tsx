@@ -4,7 +4,7 @@ const ContactForm = ():React.ReactNode => {
   return (
     <div id='contact' className="flex flex-col items-center mt-72 justify-center min-h-screen bg-gray-100 p-6">
 
-      <button className="flex items-center mt-3 mb-8 px-4 py-1 w-36 mx-auto backdrop-blur-sm bg-black/60 text-white font-semibold rounded-full sha focus:outline-none">
+      <button className="flex items-center mt-10 mb-8 px-4 py-1 w-36 mx-auto backdrop-blur-sm bg-black/60 text-white font-semibold rounded-full sha focus:outline-none">
         <span className="mr-2">✨</span> Contact <span className="ml-2">✨</span>
       </button>
 
