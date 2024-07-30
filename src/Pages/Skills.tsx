@@ -54,9 +54,9 @@ const Skills = ():React.ReactNode => {
     <div className='p-5 bg-gradient-to-bl from-[#FFF250] to-[#a09606] m-2 rounded-lg'>
         { activeTab === "skills" 
             ?
-            <div className='grid gap-0  mx-auto justify-center items-center my-10 lg:grid-cols-5 grid-cols-4'>
+            <div className='grid gap-1 mx-auto place-items-center my-16 lg:grid-cols-5 grid-cols-4'>
             {skill.map((item, index) => (
-                <div key={index} className="col-span-1 flex flex-col justify-center">
+                <div key={index} className="col-span-1 flex flex-col justify-center items-center">
                     <Skillcard 
                         img = {item.img}
                         lbl = {item.label}
@@ -67,7 +67,7 @@ const Skills = ():React.ReactNode => {
             </div>
             :
 
-            <div className='grid my-10 gap-0 lg:grid-cols-5 grid-cols-4'>
+            <div className='grid my-10 gap-1 lg:grid-cols-5 grid-cols-4'>
             {tool.map((item, index) => (
                 <div key={index} className="col-span-1">
                     <Skillcard 
