@@ -67,7 +67,7 @@ const Skills = ():React.ReactNode => {
             </div>
             :
 
-            <div className='grid my-10 gap-1 lg:grid-cols-5 grid-cols-4'>
+            <div className='grid gap-1 lg:grid-cols-5 grid-cols-4 my-16 '>
             {tool.map((item, index) => (
                 <div key={index} className="col-span-1">
                     <Skillcard 
