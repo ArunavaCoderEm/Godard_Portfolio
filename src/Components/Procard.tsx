@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 export default function Procard(props:any):React.ReactNode {
   return (
     <>
-    <div className="card mx-auto my-4 shaw h-[510px] border-2 border-[#8c8306] flex flex-col justify-between">
+    <div className="card mx-auto my-4 h-[510px] border-2 border-[#8c8306] flex flex-col justify-between">
         <div>
-            <div className="card-image shay">
+            <div className="card-image">
                 <img src={props.img} className='rounded-lg shay overflow-hidden h-40' alt="" />
             </div>
             <p className="card-title font-extrabold text-center">{props.title}</p>
@@ -25,7 +25,7 @@ export default function Procard(props:any):React.ReactNode {
             </div>
             <p className="footer"><span className="by-name">{props.auth}</span><span className="date"></span></p>
         </div>
-        <p className='font-bold text-sm text-center mt-3 text-white'>Stack : {props.stack}</p>
+        <p className='font-bold text-sm text-center mt-3 text-white'>Used : {props.used}</p>
     </div>
     </>
   )

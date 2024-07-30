@@ -27,7 +27,7 @@ export default function Projects():React.ReactNode {
                         gh = {item.ghlink}
                         dep = {item.deplink}
                         auth = {item.auth}
-                        stack = {item.stack}
+                        used = {item.used}
                         />
                 </div>
             ))}
