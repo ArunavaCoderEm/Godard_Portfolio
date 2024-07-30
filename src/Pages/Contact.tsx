@@ -55,12 +55,12 @@ const ContactForm = ():React.ReactNode => {
                 required
                 className="w-full px-4 sha mukta py-2 text-sm border border-gray-300 rounded-lg focus:outline-none"
                 rows={4}
-                placeholder="Your message..."
+                placeholder="Type your message..."
               ></textarea>
             </div>
             <button
               type="submit"
-              className="w-full mukta bg-gradient-to-bl from-[#D29EFB] to-[#590797] text-white font-semibold px-4 py-2 transition-all divide-neutral-300 hover:scale-95 rounded-lg focus:outline-none"
+              className="w-full mukta sha bg-gradient-to-bl from-[#D29EFB] to-[#590797] text-white font-semibold px-4 py-2 transition-all divide-neutral-300 hover:scale-95 rounded-lg focus:outline-none"
             >
               Send Message
             </button>
