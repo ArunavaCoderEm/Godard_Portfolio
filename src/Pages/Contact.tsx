@@ -32,7 +32,7 @@ const ContactForm = ():React.ReactNode => {
                 type="name"
                 name="name"
                 required
-                className="w-full px-4 py-2 sha mukta text-sm border border-gray-300 rounded-lg focus:outline-none"
+                className="w-full font-semibold px-4 py-2 sha mukta text-sm border border-gray-300 rounded-lg focus:outline-none"
                 placeholder="Your Name"
               />
             </div>
@@ -43,7 +43,7 @@ const ContactForm = ():React.ReactNode => {
                 type="email"
                 name="email"
                 required
-                className="w-full px-4 mukta sha py-2 text-sm border border-gray-300 rounded-lg focus:outline-none"
+                className="w-full font-semibold px-4 mukta sha py-2 text-sm border border-gray-300 rounded-lg focus:outline-none"
                 placeholder="youremail@gmail.com"
               />
             </div>
@@ -53,7 +53,7 @@ const ContactForm = ():React.ReactNode => {
                 id="message"
                 name="message"
                 required
-                className="w-full px-4 sha mukta py-2 text-sm border border-gray-300 rounded-lg focus:outline-none"
+                className="w-full font-semibold px-4 sha mukta py-2 text-sm border border-gray-300 rounded-lg focus:outline-none"
                 rows={4}
                 placeholder="Type your message..."
               ></textarea>
