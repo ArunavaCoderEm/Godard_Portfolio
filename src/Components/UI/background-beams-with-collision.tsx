@@ -137,7 +137,7 @@ const Explosion = () => {
             y: span.directionY,
             opacity: 0,
           }}
-          transition={{ duration: Math.random() * 1.5 + 0.5 }}
+          transition={{ duration: Math.random() * 2.5 + 0.5 }}
           className="absolute h-1 w-1 rounded-full bg-gradient-to-b from-[#6EACDA] to-[#fff]"
         />
       ))}
