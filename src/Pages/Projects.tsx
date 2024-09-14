@@ -14,7 +14,7 @@ export default function Projects(): React.ReactNode {
   return (
     <>
       <motion.button
-        initial={{ opacity: 0.5, y: 100 }}
+        initial={{ opacity: 0.5, y: 0 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.0,
@@ -27,7 +27,7 @@ export default function Projects(): React.ReactNode {
         <span className="ml-2">✨</span>
       </motion.button>
       <motion.div
-        initial={{ opacity: 0.5, y: 100 }}
+        initial={{ opacity: 0.5, y: 0 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.0,

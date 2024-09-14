@@ -21,7 +21,7 @@ const TextFlip = () => {
     <div className="relative flex w-full items-center justify-start py-4 text-center">
       <AnimatePresence mode="wait">
         <motion.div
-          className="absolute cursor-text text-3xl sha rounded-md p-1 font-bold mukta tracking-tight text-black"
+          className="absolute cursor-text text-3xl sha rounded-md p-1 font-bold mukta tracking-tight text-white"
           key={index}
           initial={{ rotateX: 90, opacity: 0 }}
           animate={{ rotateX: 0, opacity: 1 }}
