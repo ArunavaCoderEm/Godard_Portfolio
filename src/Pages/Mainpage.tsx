@@ -20,9 +20,9 @@ export default function MainPage():React.ReactNode {
     />
     <Hero />
     <Exp />
+    <Projects />
     <About />
     <Skills />
-    <Projects />
     <Contact />
     <MinimalSocialsFooter contact="#contact" />
     </>
