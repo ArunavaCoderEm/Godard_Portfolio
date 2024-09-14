@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
 export default function Navbar(props: any): React.ReactNode {
@@ -20,7 +21,14 @@ export default function Navbar(props: any): React.ReactNode {
   }, []);
 
   return (
-    <header
+    <motion.header
+      initial={{ opacity: 0.5, y: -50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        delay: 0.0,
+        duration: 0.4,
+        ease: "easeInOut",
+      }}
       className={`transition-all mukta-medium tracking-wider duration-300 ${
         hei > 150 ? "backdrop-blur-sm bg-[#0F0F0F]/90" : "bg-[#0F0F0F]"
       } shadow-md fixed top-0 left-0 right-0 z-[51]`}
@@ -199,7 +207,7 @@ export default function Navbar(props: any): React.ReactNode {
           </nav>
         </div>
       )}
-    </header>
+    </motion.header>
   );
 }
 
