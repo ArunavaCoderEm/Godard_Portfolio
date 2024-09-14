@@ -59,7 +59,7 @@ export default function Navbar(props: any): React.ReactNode {
             <a
               onClick={() => setMenu("home")}
               href={props.home}
-              className={`text-sm rounded-lg p-2 transition-all duration-300 font-semibold hover:underline hover:text-[#6EACDA] underline-offset-4 ${
+              className={`text-sm w-20 text-center rounded-lg p-2 transition-all duration-300 font-semibold hover:underline hover:text-[#6EACDA] underline-offset-4 ${
                 menu === "home"
                   ? "text-[#6EACDA] inssha underline sha underline-offset-4"
                   : "text-white"
@@ -70,7 +70,7 @@ export default function Navbar(props: any): React.ReactNode {
             <a
               onClick={() => setMenu("projects")}
               href={props.projects}
-              className={`text-sm rounded-lg p-2 font-semibold hover:underline hover:text-[#6EACDA] underline-offset-4 ${
+              className={`text-sm w-20 text-center rounded-lg p-2 font-semibold hover:underline hover:text-[#6EACDA] underline-offset-4 ${
                 menu === "projects"
                   ? "text-[#6EACDA] sha underline underline-offset-4 inssha"
                   : "text-white"
@@ -81,7 +81,7 @@ export default function Navbar(props: any): React.ReactNode {
             <a
               onClick={() => setMenu("about")}
               href={props.about}
-              className={`text-sm rounded-lg p-2 transition-all duration-300 font-semibold hover:underline hover:text-[#6EACDA] underline-offset-4 ${
+              className={`text-sm w-20 text-center rounded-lg p-2 transition-all duration-300 font-semibold hover:underline hover:text-[#6EACDA] underline-offset-4 ${
                 menu === "about"
                   ? "text-[#6EACDA] sha underline underline-offset-4 inssha"
                   : "text-white"
@@ -92,7 +92,7 @@ export default function Navbar(props: any): React.ReactNode {
             <a
               onClick={() => setMenu("skills")}
               href={props.skills}
-              className={`text-sm rounded-lg p-2 transition-all duration-300 font-semibold hover:underline hover:text-[#6EACDA] underline-offset-4 ${
+              className={`text-sm w-20 text-center rounded-lg p-2 transition-all duration-300 font-semibold hover:underline hover:text-[#6EACDA] underline-offset-4 ${
                 menu === "skills"
                   ? "text-[#6EACDA] sha underline underline-offset-4 inssha"
                   : "text-white"
