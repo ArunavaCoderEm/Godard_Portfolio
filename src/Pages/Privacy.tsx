@@ -23,15 +23,15 @@ const PrivacyPolicyPage = ():React.ReactNode => {
         </p>
         <p className="mb-4">
           If you have any questions about this Privacy Policy, please contact us at :
-          <a href="/" className="text-[#FFF250] hover:underline"> contact @meard.vercel.app</a>.
+          <a href="/" className="text-[#6EACDA] hover:underline"> contact @meard.vercel.app</a>.
         </p>
       </div>
       <div className="flex w-full flex-col items-center justify-center gap-5 border-t border-gray-900/5 bg-[#121316] dark:border-white/5">
         <h1 className="text-white p-3">© 2024 Arunava Dutta. All rights reserved.</h1>
         <div className="flex items-center">
-          <h1 className="text-[#FFF250] p-3">Developed by Arunava Dutta</h1>
+          <h1 className="text-[#6EACDA] p-3">Developed by Arunava Dutta</h1>
           <span className="text-gray-400 mx-2">|</span>
-          <a href="/" className="text-[#FFF250] hover:underline">
+          <a href="/" className="text-[#6EACDA] hover:underline">
             Website
           </a>
         </div>
