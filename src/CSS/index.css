@@ -21,7 +21,7 @@ html {
   width: 20px;
   height: 10px;
   margin: 0 5px;
-  background-color: #fff250;
+  background-color: #6EACDA;
   border-radius: 5px;
   animation: loading-wave-animation 1s ease-in-out infinite;
 }
@@ -146,17 +146,17 @@ html {
 
 .glow {
   animation: glowEffect 2s infinite;
-  color: #fff250;
+  color: #6EACDA;
 }
 
 .shay {
-  box-shadow: 0 0 10px #fff250;
+  box-shadow: 0 0 10px #6EACDA;
 }
 
 @keyframes glowEffect {
   0%,
   50% {
-    text-shadow: 0 0 10px #fff250;
+    text-shadow: 0 0 10px #6EACDA;
   }
   100% {
     text-shadow: none;
@@ -179,7 +179,7 @@ html {
 
 .card-title {
   font-size: 18px;
-  color: #fff250;
+  color: #6EACDA;
   margin: 15px 0 0 10px;
 }
 
