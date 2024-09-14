@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import MainPage from './Pages/Mainpage'
 import BackgroundGrid from './Components/Bgmark'
 import PrivacyPolicyPage from './Pages/Privacy'
+import Error_404 from './Pages/Error_404'
 
 export default function Page():React.ReactNode {
   return (
@@ -11,6 +12,7 @@ export default function Page():React.ReactNode {
         <Routes>
             <Route path='/' element={<MainPage />} />
             <Route path='/privacy' element={<PrivacyPolicyPage />} />
+            <Route path='/*' element={<Error_404 />} />
         </Routes>
     </>
   )
