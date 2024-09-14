@@ -85,7 +85,6 @@ html {
 .mukta {
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
   font-style: normal;
   font-variation-settings:
     "wdth" 100,
@@ -122,11 +121,11 @@ html {
 .blob {
   position: relative;
   background-size: cover;
-  width: 600px;
-  height: 550px;
+  width: 550px;
+  height: 500px;
+  margin-bottom: 2.5em;
   -webkit-background-position: center;
   background-position: center center;
-  margin-top: 10%;
   box-shadow: 0px 0px 10px 5px #fff250;
   animation: animate 5s ease-in-out infinite;
   transition: all 1s ease-in-out;

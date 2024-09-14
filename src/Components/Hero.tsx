@@ -1,33 +1,34 @@
-import React from 'react'
+import React from "react";
+import { BackgroundBeamsWithCollision } from "./UI/background-beams-with-collision";
 
-
-
-export default function Hero():React.ReactNode {
-
+export default function Hero(): React.ReactNode {
   return (
     <>
-    <div className='grid grid-cols-1 gap-y-10 mt-20'>
-    <div className="h-screen hidden lg:flex absolute w-screen overflow-hidden justify-center items-center">
-        <h1 className="text-center bg-clip-text text-transparent bg-gradient-to-b from-yellow-400 to-white font-extrabold tracking-widest txt opacity-20 selection:bg-[#FFF250]">GODARD</h1>
-    </div>
-    <button className="flex items-center w-32 absolute shaw right-0 left-0 mx-auto my-2 backdrop-blur-sm bg-black/30 text-white font-semibold px-4 py-1 rounded-full shadow-lg focus:outline-none">
-        <span className="mr-2">✨</span> Home <span className="ml-2">✨</span>
-    </button>
-        <div className='flex mt-5 justify-center items-center'>
-            <div className="blob bg-[url('/me.jpg')] mx-auto lg:mt-[5%] sm:mt-[10%]"></div>
-            <h1 
-            onClick={() => window.scrollTo(0, 550)}
-            className="text-xl absolute font-thin cursor-pointer hidden tracking-tight lg:flex h-[75vh] py-1 mb-1 right-0 text-[#FFF250] vertical-text">SCROLL DOWN</h1>
+      <BackgroundBeamsWithCollision>
+        <div className="grid grid-cols-1 gap-y-10 mt-20 mukta relative">
+          <div className="h-screen hidden lg:flex absolute inset-0 justify-center items-center">
+            <h1 className="text-left mukta-bold bg-clip-text text-transparent bg-gradient-to-b from-[#6EACDA] via-[#6EACDA] to-white font-extrabold tracking-wider txt opacity-30 selection:bg-[#FFF250]">
+              GODARD
+            </h1>
+          </div>
+          <button className="flex items-center w-32 absolute right-0 left-0 mx-auto my-2 backdrop-blur-sm bg-black/30 text-white font-semibold px-4 py-1 rounded-full shadow-lg focus:outline-none">
+            <span className="mr-2">✨</span> Home{" "}
+            <span className="ml-2">✨</span>
+          </button>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 p-3 gap-4">
+            <div className="flex mt-5 justify-center items-center p-3">
+              <div className="blob bg-[url('/me.jpg')] mx-auto lg:mt-[5%] sm:mt-[10%]"></div>
+              <h1
+                onClick={() => window.scrollTo(0, 550)}
+                className="text-xl absolute font-thin cursor-pointer hidden tracking-tight lg:flex h-[75vh] py-1 mb-1 right-0 text-[#FFF250] vertical-text"
+              >
+                SCROLL DOWN
+              </h1>
+            </div>
+          </div>
         </div>
-        <div className='flex justify-center items-center px-1'>
-        <h1 className='text-center text-5xl bg-clip-text text-transparent bg-gradient-to-b from-yellow-400 to-white font-extrabold mt-3 selection:bg-[#FFF250] mukta-bold'>
-        .Design in mind to code in reality.
-        </h1>
-        </div>
-        <h2 className='mx-10 mb-10 selection:bg-[#FFF250] leading-relaxed text-center text-gray-600 text-sm lg:text-xl font-extralight'>
-        Coding is the art of turning ideas into reality through logic and creativity. It's a puzzle-solving adventure where every line of code builds something new, where bugs are challenges to overcome, and where each keystroke shapes the digital world around us.
-        </h2>
-    </div>
+      </BackgroundBeamsWithCollision>
     </>
-  )
+  );
 }

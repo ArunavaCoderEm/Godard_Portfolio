@@ -9,7 +9,7 @@ interface BackgroundGridProps {
 }
 
 const BackgroundGrid = ({
-  color = '#FFF250',
+  color = 'gray',
   cellSize = '25px',
   strokeWidth = '2px',
   className,
@@ -26,7 +26,7 @@ const BackgroundGrid = ({
 
   return (
     <div
-      className={`pointer-events-none absolute inset-0 left-0 top-0 flex h-96 w-full ${className}`}
+      className={`pointer-events-none z-[51] absolute inset-0 left-0 top-16 flex h-96 w-full ${className}`}
       style={{
         backgroundImage: `url("${svgDataUrl}")`,
         backgroundRepeat: 'repeat',
