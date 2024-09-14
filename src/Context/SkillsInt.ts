@@ -76,6 +76,14 @@ export const skills : LabeledValue[] = [
         img : "./webrtc.png",
         label : "WebRTC"
     },
+    {
+        img : "./Supabase.png",
+        label : "Supabase"
+    },
+    {
+        img : "./Clerk.jpg",
+        label : "Clerk"
+    },
 ]
 
 export const tools : LabeledValue[] = [
@@ -134,5 +142,17 @@ export const tools : LabeledValue[] = [
     {
         img : "./photoshop.png",
         label : "Photoshop"
+    },
+    {
+        img : "./CF.png",
+        label : "CloudFlare"
+    },
+    {
+        img : "./V.png",
+        label : "Vercel"
+    },
+    {
+        img : "./Nt.png",
+        label : "Netlify"
     },
 ]
