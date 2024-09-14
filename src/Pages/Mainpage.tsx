@@ -7,6 +7,7 @@ import Projects from './Projects'
 import Contact from './Contact'
 import MinimalSocialsFooter from '../Components/Footer'
 import Navbar from '../Components/Navbar'
+import TestimonialSlider from '../Components/Testimonials'
 
 export default function MainPage():React.ReactNode {
   return (
@@ -23,6 +24,7 @@ export default function MainPage():React.ReactNode {
     <Projects />
     <About />
     <Skills />
+    <TestimonialSlider />
     <Contact />
     <MinimalSocialsFooter contact="#contact" />
     </>
