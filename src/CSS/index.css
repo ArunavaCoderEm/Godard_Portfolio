@@ -1,152 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Protest+Guerrilla&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .loading-wave {
-    width: 300px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  .loading-bar {
-    width: 20px;
-    height: 10px;
-    margin: 0 5px;
-    background-color: #FFF250;
-    border-radius: 5px;
-    animation: loading-wave-animation 1s ease-in-out infinite;
-  }
-  
-  .loading-bar:nth-child(2) {
-    animation-delay: 0.1s;
-  }
-  
-  .loading-bar:nth-child(3) {
-    animation-delay: 0.2s;
-  }
-  
-  .loading-bar:nth-child(4) {
-    animation-delay: 0.3s;
-  }
-  
-  @keyframes loading-wave-animation {
-    0% {
-      height: 10px;
-    }
-  
-    50% {
-      height: 50px;
-    }
-  
-    100% {
-      height: 10px;
-    }
-  }
-  
-  .sha {
-    box-shadow: 0 0 15px #121316;
-  }
-
-  .shaw {
-    box-shadow: 0 0 15px #b1b1b1;
-  }
-  
-  .shawg {
-    filter: drop-shadow(0 0 10px #ffffffc1);
-  }
-
- .inssha {
-  box-shadow: inset 0px 0px 10px #fff;
- }
-
-  .mukta-medium {
-    font-family: "Mukta", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-
-  .mukta {
-    font-family: "Mukta", sans-serif;
-  }
-
-  .mukta-bold {
-    font-family: "Mukta", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-
-  .anton-sc-regular {
-    font-family: "Anton SC", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .shat {
-    text-shadow: 2px 2px #FFF250;
-  }
-
-  .vertical-text {
-    writing-mode: vertical-rl; 
-    transform: rotate(180deg);
-    margin-right: 20px;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-  .cta {
-    position: relative;
-    margin: auto;
-    padding: 4px 15px;
-    z-index: 1;
-    transition: all 0.2s ease;
-  }
-  .cta:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    border-radius: 28px;
-    background: #FFF250;
-    width: 32px;
-    height: 32px;
-    transition: all 0.3s ease;
+html {
+  scroll-behavior: smooth;
+}
+
+.loading-bar {
+  width: 20px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #fff250;
+  border-radius: 5px;
+  animation: loading-wave-animation 1s ease-in-out infinite;
+}
+
+.loading-bar:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.loading-bar:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.loading-bar:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+@keyframes loading-wave-animation {
+  0% {
+    height: 10px;
   }
 
-  .cta:hover:before {
-    width: 100%;
-    background: #D29EFB;
+  50% {
+    height: 50px;
   }
 
-  .ctaac {
-    width: 100%;
-    background: linear-gradient(180deg,#D29EFB, #5c049f);
+  100% {
+    height: 10px;
   }
+}
 
-  .cta:active {
-    transform: scale(0.96);
-  }
+.sha {
+  box-shadow: 0 0 15px #121316;
+}
 
-    
-  .blob{
-    position: relative;
-    background-size: cover;
-    width: 600px;
-    height: 550px;
-    -webkit-background-position: center;
-    background-position: center center;
-    margin-top: 10%;;
-    box-shadow: 0px 0px 10px 5px 
-    #FFF250;
-    animation: animate 5s ease-in-out infinite;
-    transition: all 1s ease-in-out;
+.shaw {
+  box-shadow: 0 0 15px #b1b1b1;
+}
+
+.shawg {
+  filter: drop-shadow(0 0 10px #ffffffc1);
+}
+
+.inssha {
+  box-shadow: inset 0px 0px 10px #6EACDA;
+}
+
+.insshat {
+  text-shadow: 2px 2px #fff;
+}
+
+.mukta-medium {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+.mukta {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+.mukta-bold {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+.anton-sc-regular {
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.shat {
+  text-shadow: 2px 2px #6EACDA;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin-right: 20px;
+}
+
+
+.blob {
+  position: relative;
+  background-size: cover;
+  width: 600px;
+  height: 550px;
+  -webkit-background-position: center;
+  background-position: center center;
+  margin-top: 10%;
+  box-shadow: 0px 0px 10px 5px #fff250;
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
 }
 
 .txt {
@@ -154,26 +137,28 @@
 }
 
 @keyframes animate {
-    0%, 100%{
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    }
-    50%{
-        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-    }
+  0%,
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
 }
 
 .glow {
   animation: glowEffect 2s infinite;
-  color: #FFF250;
+  color: #fff250;
 }
 
 .shay {
-  box-shadow: 0 0 10px #FFF250;
+  box-shadow: 0 0 10px #fff250;
 }
 
 @keyframes glowEffect {
-  0%, 50% {
-    text-shadow: 0 0 10px #FFF250;
+  0%,
+  50% {
+    text-shadow: 0 0 10px #fff250;
   }
   100% {
     text-shadow: none;
@@ -186,10 +171,7 @@
   min-height: 370px;
   border-radius: 20px;
   background: #212121;
-  box-shadow:
-  inset 0 -3em 3em #464101,
- 
-  0.3em 0.3em 1em #333000;
+  box-shadow: inset 0 -3em 3em #464101, 0.3em 0.3em 1em #333000;
   transition: 0.4s;
 }
 
@@ -199,7 +181,7 @@
 
 .card-title {
   font-size: 18px;
-  color: #FFF250;
+  color: #fff250;
   margin: 15px 0 0 10px;
 }
 
@@ -208,8 +190,7 @@
   background-color: #313131;
   border-radius: 15px;
   background: #313131;
-  box-shadow: inset 5px 5px 3px #2f2f2f,
-            inset -5px -5px 3px #333333;
+  box-shadow: inset 5px 5px 3px #2f2f2f, inset -5px -5px 3px #333333;
 }
 
 .card-body {
