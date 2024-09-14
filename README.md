@@ -1,1 +1,1 @@
-My portfolio with aceternity UI, Vite + react, Tailwind, Typescript & Framer Motion,
+My portfolio with aceternity UI, Vite + react, Tailwind, Typescript & Framer Motion.
