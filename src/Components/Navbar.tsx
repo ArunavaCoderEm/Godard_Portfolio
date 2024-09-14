@@ -31,7 +31,7 @@ export default function Navbar(props: any): React.ReactNode {
       }}
       className={`transition-all mukta-medium tracking-wider duration-300 ${
         hei > 150 ? "backdrop-blur-sm bg-[#0F0F0F]/90" : "bg-[#0F0F0F]"
-      } shadow-md fixed top-0 left-0 right-0 z-[51]`}
+      } shadow-md fixed top-0 left-0 right-0 z-[53]`}
     >
       <div className="flex h-16 items-center px-4 md:px-6 w-full">
         <a
@@ -132,7 +132,17 @@ export default function Navbar(props: any): React.ReactNode {
         </div>
       </div>
       {menuOpen && (
-        <div className="md:hidden tracking-wider z-[101] mukta-medium">
+        <motion.div
+          initial={{ opacity: 0.5, y: -10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.0,
+            duration: 0.2,
+            ease: "easeInOut",
+          }}
+          exit={{ opacity: 0.5, y: -10 }}
+          className="md:hidden tracking-wider z-[101] mukta-medium"
+        >
           <nav className="flex px-4 flex-col rounded-lg z-[101] items-center gap-4 py-4">
             <a
               onClick={() => setMenu("home")}
@@ -205,7 +215,7 @@ export default function Navbar(props: any): React.ReactNode {
               </span>
             </a>
           </nav>
-        </div>
+        </motion.div>
       )}
     </motion.header>
   );

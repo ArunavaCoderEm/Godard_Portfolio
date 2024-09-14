@@ -14,7 +14,7 @@ export default function Hero(): React.ReactNode {
             duration: 0.4,
             ease: "easeInOut",
           }}
-          className="grid grid-cols-1 gap-y-10 mt-20 mukta relative min-h-screen"
+          className="grid grid-cols-1 gap-y-10 mt-20 mukta relative h-auto"
         >
           <motion.div
             initial={{ opacity: 0.5, y: 100 }}
@@ -53,16 +53,16 @@ export default function Hero(): React.ReactNode {
             }}
             className="flex flex-col mt-5 justify-center items-center p-3 relative"
           >
-            <div className="blob lg:w-[550px] lg:h-[500px] w-full h-96 bg-[url('/me.jpg')] mx-auto lg:mt-[5%] sm:mt-[10%] relative z-10"></div>
+            <div className="blob mt-10 lg:w-[550px] lg:h-[500px] w-full h-96 bg-[url('/me.jpg')] mx-auto lg:mt-[5%] sm:mt-[10%] relative z-10"></div>
             <div className="relative z-20 my-3 p-3">
               <h1 className="text-3xl lg:text-5xl font-extrabold bg-clip-text bg-gradient-to-b text-transparent from-[#6EACDA] via-[#6EACDA] to-[#fff] mukta text-center">Design In Mind To Code In Reality</h1>
             </div>
-            <p className="text-white/80 mukta text-md lg:text-xl mb-5 text-center p-3">Code is like humor. When you have to explain it, it’s bad. The best code is the one that is clean, clear, and easy to understand.</p>
+            <p className="text-white/60 mukta text-md lg:text-xl mb-5 text-center p-3">Code is like humor. When you have to explain it, it’s bad. The best code is the one that is clean, clear, and easy to understand.</p>
           </motion.div>
         </motion.div>
         <h1
           onClick={() => window.scrollTo(0, 550)}
-          className="text-xl absolute font-thin cursor-pointer hidden tracking-tight lg:flex h-[75vh] py-1 mb-1 right-0 text-[#6EACDA] mukta vertical-text mt-10"
+          className="text-xl absolute font-thin cursor-pointer hidden tracking-tight lg:flex h-[75vh] py-1 mb-1 z-[55] right-0 text-[#6EACDA] mukta vertical-text mt-10"
         >
           SCROLL DOWN
         </h1>
