@@ -5,11 +5,11 @@ import { CardBody, CardContainer, CardItem } from "../Components/UI/3d-card";
 export default function Procard(props: any): React.ReactNode {
   return (
     <>
-      <CardContainer className="inter-var mukta h-[27rem]">
+      <CardContainer className="inter-var mukta h-[28rem]">
         <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
           <CardItem
             translateZ="50"
-            className="text-xl font-bold text-neutral-600 dark:text-white"
+            className="text-xl font-bold text-[#6EACDA]"
           >
             {props.title}
           </CardItem>
@@ -28,6 +28,10 @@ export default function Procard(props: any): React.ReactNode {
               className="h-56 w-full object-cover rounded-xl group-hover/card:shadow-xl"
               alt="thumbnail"
             />
+            <div className="grid grid-cols-2 mt-4">
+              <p className="text-[#6EACDA] mukta text-xs text-left">{props.auth}</p>
+              <p className="text-[#6EACDA] mukta text-xs text-right">{props.used}</p>
+            </div>
           </CardItem>
           <div className="flex justify-between items-center mt-5">
             <Link
