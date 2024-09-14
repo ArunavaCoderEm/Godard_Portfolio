@@ -1,8 +1,54 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import {
+  IconBrandGithub,
+  IconBrandInstagram,
+  IconBrandTwitter,
+  IconBrandLinkedin,
+  IconBrandLeetcode
+} from "@tabler/icons-react";
+import { FloatingDock } from '../Components/UI/floating-docs';
 
 export default function Exp(): React.ReactNode {
+  const links = [
+    {
+      title: "Leetcode",
+      icon: (
+        <IconBrandLeetcode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "https://leetcode.com/u/Arunava_Dutta/",
+    },
+    {
+      title: "Instagram",
+      icon: (
+        <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "https://www.instagram.com/goduttaem/",
+    },
+    {
+      title: "LinkedIn",
+      icon: (
+        <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "https://www.linkedin.com/in/arunava-dutta-2b94bb253/",
+    },
+    {
+      title: "Twitter",
+      icon: (
+        <IconBrandTwitter className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "https://x.com/GoDutta",
+    },
+    {
+      title: "GitHub",
+      icon: (
+        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "https://github.com/ArunavaCoderEm",
+    },
+  ];
+
   return (
     <motion.div
       initial={{ opacity: 0.5, y: 100 }}
@@ -12,7 +58,7 @@ export default function Exp(): React.ReactNode {
         duration: 0.4,
         ease: "easeInOut",
       }}
-      className="py-5 lg:px-10 px-2"
+      className="py-5 px-10 mukta"
     >
       <button className="flex items-center w-32 mx-auto mb-4 backdrop-blur-sm bg-black/60 text-white font-semibold px-4 py-1 rounded-full shadow-lg sha focus:outline-none">
         <span className="mr-2">✨</span> Works <span className="ml-2">✨</span>
@@ -32,11 +78,11 @@ export default function Exp(): React.ReactNode {
           >
             <img
               src="./hi22.png"
-              className="w-24 h-auto rounded-lg"
+              className="lg:lg:w-24 w-10 h-auto rounded-lg"
               alt="Experience Icon"
             />
             <div className="flex flex-col">
-              <h1 className="font-extrabold text-2xl lg:text-3xl">
+              <h1 className="font-extrabold text-xl lg:text-3xl">
                 <span className="bg-black text-white p-1 rounded-lg mr-3">
                   2+
                 </span>{" "}
@@ -62,11 +108,11 @@ export default function Exp(): React.ReactNode {
           >
             <img
               src="./hi33.png"
-              className="w-24 h-auto rounded-lg"
+              className="lg:w-24 w-10 h-auto rounded-lg"
               alt="Experience Icon"
             />
             <div className="flex flex-col">
-              <h1 className="font-extrabold text-2xl lg:text-3xl">
+              <h1 className="font-extrabold text-xl lg:text-3xl">
                 <span className="bg-black text-white p-1 rounded-lg mr-3">
                   30+
                 </span>{" "}
@@ -92,11 +138,11 @@ export default function Exp(): React.ReactNode {
           >
             <img
               src="./cln.png"
-              className="w-24 h-auto rounded-lg"
+              className="lg:w-24 w-10 h-auto rounded-lg"
               alt="Experience Icon"
             />
             <div className="flex flex-col">
-              <h1 className="font-extrabold text-2xl lg:text-3xl">
+              <h1 className="font-extrabold text-xl lg:text-3xl">
                 <span className="bg-black text-white p-1 rounded-lg mr-3">
                   5+
                 </span>{" "}
@@ -111,8 +157,12 @@ export default function Exp(): React.ReactNode {
       <h1 className="text-center text-[#6EACDA] text-lg my-5 mukta-medium">
         "Everything is nothing and nothing is everything"
         <br />
-        <span className="font-bold mukta-bold">.Lord Shiva.</span>
+        <span className="font-bold mukta">.Lord Shiva.</span>
       </h1>
+
+      <div className="flex my-10 items-center justify-center w-full">
+        <FloatingDock items={links} />
+      </div>
     </motion.div>
   );
 }
