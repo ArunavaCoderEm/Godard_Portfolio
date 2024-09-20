@@ -6,7 +6,7 @@ export default function Procard(props: any): React.ReactNode {
   return (
     <>
       <CardContainer className="inter-var mukta h-[28rem]">
-        <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+        <CardBody className="hover:border-[2px] transition-all duration-300 border border-gray-600/50  hover:border-[#6EACDA] relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] bg-black w-auto sm:w-[30rem] h-auto rounded-xl p-6">
           <CardItem
             translateZ="50"
             className="text-xl font-bold text-[#6EACDA]"

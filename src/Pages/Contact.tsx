@@ -1,5 +1,10 @@
 import { motion } from "framer-motion";
 import React from "react";
+import Email from "../Icons/Email";
+import Phone from "../Icons/Phone";
+import Name from "../Icons/Name";
+import Message from "../Icons/Message";
+import Send from "../Icons/Send";
 
 const ContactForm = (): React.ReactNode => {
   return (
@@ -25,12 +30,12 @@ const ContactForm = (): React.ReactNode => {
             My Contact Info :
           </h2>
           <p className="text-sm mb-2 sm:text-center text-left">
-            <span className="font-semibold mukta text-lg mr-4">Email :</span>{" "}
-            <span className="text-[#6EACDA]">meard06@gmail.com</span>
+            <span className="font-semibold mukta mb-2 text-md mr-4 flex gap-2 items-center "><Email /> Email :</span>{" "}
+            <span className="text-[#6EACDA] text-md">meard06@gmail.com</span>
           </p>
           <p className="text-sm sm:text-center text-left">
-            <span className="font-semibold mukta text-lg mr-3">Phone :</span>{" "}
-            <span className="text-[#6EACDA]">+91 8695260699</span>
+            <span className="font-semibold mukta mb-2 text-md flex items-center gap-2 mr-3"><Phone /> Phone :</span>{" "}
+            <span className="text-[#6EACDA] text-md">+91 8695260699</span>
           </p>
         </div>
 
@@ -50,9 +55,10 @@ const ContactForm = (): React.ReactNode => {
             />
             <div>
               <label
-                className="block mukta text-lg font-semibold mb-2 text-[#0F0F0F]"
+                className="flex gap-2 items-center mukta text-lg font-semibold mb-2 text-[#0F0F0F]"
                 htmlFor="name"
               >
+                <Name />
                 Name
               </label>
               <input
@@ -66,9 +72,10 @@ const ContactForm = (): React.ReactNode => {
             </div>
             <div>
               <label
-                className="block mukta text-lg font-semibold mb-2 text-[#0F0F0F]"
+                className="flex gap-2 items-center mukta text-lg font-semibold mb-2 text-[#0F0F0F]"
                 htmlFor="email"
               >
+                <Email />
                 Email
               </label>
               <input
@@ -82,9 +89,10 @@ const ContactForm = (): React.ReactNode => {
             </div>
             <div>
               <label
-                className="block text-sm lgkta font-semibold mb-2 text-[#0F0F0F]"
+                className="flex gap-2 items-center text-lg lgkta font-semibold mb-2 text-[#0F0F0F]"
                 htmlFor="message"
               >
+                <Message />
                 Message
               </label>
               <textarea
@@ -98,8 +106,9 @@ const ContactForm = (): React.ReactNode => {
             </div>
             <button
               type="submit"
-              className="w-full mukta sha bg-gradient-to-bl from-black/80 to-black/60 text-white font-semibold px-4 py-2 transition-all divide-neutral-300 hover:scale-95 rounded-lg focus:outline-none"
+              className="w-full flex gap-2 items-center justify-center mukta sha bg-gradient-to-bl from-black/80 to-black/60 text-white font-semibold px-4 py-2 transition-all divide-neutral-300 hover:scale-95 rounded-lg focus:outline-none"
             >
+              <Send />
               Send Message
             </button>
           </form>

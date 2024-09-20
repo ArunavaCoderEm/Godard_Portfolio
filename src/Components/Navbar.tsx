@@ -31,7 +31,7 @@ export default function Navbar(props: any): React.ReactNode {
       }}
       className={`transition-all z-[104] mukta-medium tracking-wider duration-300 ${
         hei > 150 ? "backdrop-blur-lg bg-[#0F0F0F]/90" : "bg-[#0F0F0F]"
-      } shadow-md fixed top-0 left-0 right-0 z-[53]`}
+      } shadow-md fixed top-0 left-0 right-0 z-[104]`}
     >
       <div className="flex h-16 items-center px-4 md:px-6 w-full">
         <a
