@@ -127,7 +127,7 @@ const Explosion = () => {
   }));
 
   return (
-    <div className="absolute z-50 h-2 w-2">
+    <div className="absolute z-[110] h-2 w-2">
       {spans.map((span) => (
         <motion.span
           key={span.id}

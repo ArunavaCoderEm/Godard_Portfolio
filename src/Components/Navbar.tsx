@@ -69,7 +69,7 @@ export default function Navbar(props: any): React.ReactNode {
                   : "text-white"
               }`}
             >
-              <span className="relative z-10 flex gap-x-2 items-center">
+              <span className="relative z-10 flex gap-x-1 justify-center items-center">
                 <Home />
                 Home</span>
             </a>
@@ -82,7 +82,7 @@ export default function Navbar(props: any): React.ReactNode {
                   : "text-white"
               }`}
             >
-              <span className="relative z-10 flex gap-x-2 items-center">
+              <span className="relative z-10 flex gap-x-1 justify-center items-center">
                 <Tech />
                 Projects</span>
             </a>
@@ -95,7 +95,7 @@ export default function Navbar(props: any): React.ReactNode {
                   : "text-white"
               }`}
             >
-              <span className="relative flex gap-x-2 items-center z-10">
+              <span className="relative flex gap-x-1 justify-center items-center z-10">
                 <About />
                 About</span>
             </a>
@@ -108,7 +108,7 @@ export default function Navbar(props: any): React.ReactNode {
                   : "text-white"
               }`}
             >
-              <span className="relative flex items-center gap-x-2 z-10">
+              <span className="relative flex items-center justify-center gap-x-1 z-10">
                 <SkillsI />
                 Skills</span>
             </a>
@@ -163,7 +163,7 @@ export default function Navbar(props: any): React.ReactNode {
                 menu === "home"
                   ? "text-[#6EACDA] sha underline underline-offset-4 inssha"
                   : "bg-black text-white"
-              } w-80 flex gap-x-2 items-center justify-center font-semibold hover:underline underline-offset-4`}
+              } w-80 flex gap-x-1 items-center justify-center font-semibold hover:underline underline-offset-4`}
             >
               <Home />
               Home
@@ -175,7 +175,7 @@ export default function Navbar(props: any): React.ReactNode {
                 menu === "projects"
                   ? "text-[#6EACDA] sha underline underline-offset-4 inssha"
                   : "bg-black text-white"
-              } w-80 flex gap-x-2 items-center justify-center font-semibold hover:underline underline-offset-4`}
+              } w-80 flex gap-x-1 items-center justify-center font-semibold hover:underline underline-offset-4`}
             >
               <Tech />
               Projects
@@ -187,7 +187,7 @@ export default function Navbar(props: any): React.ReactNode {
                 menu === "about"
                   ? "text-[#6EACDA] sha underline underline-offset-4 inssha"
                   : "bg-black text-white"
-              } w-80 flex gap-x-2 items-center justify-center font-semibold hover:underline underline-offset-4`}
+              } w-80 flex gap-x-1 items-center justify-center font-semibold hover:underline underline-offset-4`}
             >
               <About />
               About
@@ -199,7 +199,7 @@ export default function Navbar(props: any): React.ReactNode {
                 menu === "skills"
                   ? "text-[#6EACDA] sha underline underline-offset-4 inssha"
                   : "bg-black text-white"
-              } w-80 flex gap-x-2 items-center justify-center font-semibold hover:underline underline-offset-4`}
+              } w-80 flex gap-x-1 items-center justify-center font-semibold hover:underline underline-offset-4`}
             >
               <SkillsI />
               Skills
