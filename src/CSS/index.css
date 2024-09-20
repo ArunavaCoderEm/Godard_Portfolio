@@ -127,6 +127,7 @@ html {
   box-shadow: 0px 0px 15px 7px #6EACDA;
   animation: animate 5s ease-in-out infinite;
   transition: all 1s ease-in-out;
+  z-index: 99;
 }
 
 .txt {

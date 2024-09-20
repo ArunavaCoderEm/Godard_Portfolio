@@ -58,7 +58,7 @@ export default function Exp(): React.ReactNode {
         duration: 0.4,
         ease: "easeInOut",
       }}
-      className="py-5 px-10 mukta"
+      className="py-5 px-10 mukta mt-5"
     >
       <button className="flex items-center w-32 mx-auto mb-4 backdrop-blur-sm bg-black/60 text-white font-semibold px-4 py-1 rounded-full shadow-lg sha focus:outline-none">
         <span className="mr-2">✨</span> Works <span className="ml-2">✨</span>
