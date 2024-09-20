@@ -82,9 +82,9 @@ const TestimonialCards = (): React.ReactNode => {
               href={testimonial.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#000] text-white font-semibold px-4 py-2 rounded-md shadow-md hover:bg-black/70 transition-colors"
+              className="inline-block bg-[#000] text-white font-semibold px-4 py-2 rounded-md shadow-md hover:bg-black/70 transition-all duration-300"
             >
-              Visit
+              Visit →
             </a>
           </div>
         ))}

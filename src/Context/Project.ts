@@ -34,7 +34,7 @@ export const projectsList: ProjLbImg[] = [
         deplink: "https://repxai.vercel.app",
         auth: "Arunava Dutta",
         desc: "AI-powered site for evaluating student marks and managing assignments.",
-        used: "MERN, FB",
+        used: "MERN, FB, TW",
     },
     {
         label: "TaskEase",

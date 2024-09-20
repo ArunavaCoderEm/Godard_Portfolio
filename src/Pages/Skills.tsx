@@ -43,13 +43,25 @@ const Skills = (): React.ReactNode => {
           <h1 className="text-4xl p-5 bg-clip-text text-transparent bg-gradient-to-b from-[#6EACDA] to-white font-extrabold">
             What Are My Programming Skills ?
           </h1>
-          <h3 className="px-5 my-2 text-white/60 mukta font-normal rounded-lg p-5">
-            My expertise lies in front-end development, creating engaging user
-            interfaces for websites and apps. I'm also comfortable with back-end
-            development, giving me a broader skillset. To stay sharp, I tackle
-            competitive coding challenges on platforms like HackerRank (5-⭐)
-            and LeetCode. It's a great way to learn, grow, and enjoy solving
-            problems !
+          <h3 className="px-5 lg:ml-2 my-2 text-white/80 mukta font-normal rounded-lg p-5">
+            My expertise lies in{" "}
+            <span className="font-semibold text-[#6EACDA]">
+              Frontend development,{" "}
+            </span>
+            creating engaging UIs for{" "}
+            <span className="font-semibold text-[#6EACDA]">websites</span> and{" "}
+            <span className="font-semibold text-[#6EACDA]">apps.</span> I'm also
+            comfortable with{" "}
+            <span className="font-semibold text-[#6EACDA]">
+              Backend development,
+            </span>{" "}
+            giving me a broader skillset. To stay sharp, I tackle competitive
+            coding challenges on platforms like{" "}
+            <span className="font-semibold text-[#6EACDA]">
+              HackerRank (5-⭐)
+            </span>{" "}
+            and <span className="font-semibold text-[#6EACDA]">LeetCode.</span>{" "}
+            It's a great way to learn, grow, and enjoy solving problems !
           </h3>
 
           <div className="my-2">

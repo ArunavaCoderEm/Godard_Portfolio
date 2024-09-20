@@ -55,9 +55,9 @@ export default function Projects(): React.ReactNode {
       <Link
         to={"https://github.com/ArunavaCoderEm?tab=repositories"}
         target="_blank"
-        className="text-white mt-5 mb-10 mx-auto flex justify-center hover:text-[#6EACDA] transition-all duration-300 text-center mukta w-[22rem] p-1 rounded-full hover:translate-y-1"
+        className="text-white mt-5 mb-10 mx-auto bg-black/80 sha flex justify-center hover:text-[#6EACDA] transition-all duration-300 text-center mukta w-[22rem] p-1 rounded-full hover:translate-y-1"
       >
-        🎁 More Projects Available On My GitHub 🎁
+        🎢 More Projects On My GitHub →
       </Link>
     </>
   );
