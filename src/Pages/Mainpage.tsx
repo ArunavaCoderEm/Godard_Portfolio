@@ -26,7 +26,7 @@ export default function MainPage():React.ReactNode {
     <Skills />
     <TestimonialSlider />
     <Contact />
-    <MinimalSocialsFooter contact="#contact" />
+    <MinimalSocialsFooter />
     </>
   )
 }
