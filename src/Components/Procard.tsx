@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { CardBody, CardContainer, CardItem } from "../Components/UI/3d-card";
+import Code from "../Icons/Code";
+import Cloud from "../Icons/Cloud";
+import Tech from "../Icons/Tech";
 
 export default function Procard(props: any): React.ReactNode {
   return (
@@ -9,9 +12,9 @@ export default function Procard(props: any): React.ReactNode {
         <CardBody className="hover:border-[2px] transition-all duration-300 border border-gray-600/50  hover:border-[#6EACDA] relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] bg-black w-auto sm:w-[30rem] h-auto rounded-xl p-6">
           <CardItem
             translateZ="50"
-            className="text-xl font-bold text-[#6EACDA]"
+            className="text-xl flex gap-2 items-center font-bold text-[#6EACDA]"
           >
-            {props.title}
+           <Code />  {props.title}
           </CardItem>
           <CardItem
             as="p"
@@ -25,21 +28,23 @@ export default function Procard(props: any): React.ReactNode {
               src={props.img}
               height="900"
               width="900"
-              className="h-56 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+              className="h-56 w-full object-cover rounded-xl hover:sha group-hover/card:shadow-xl"
               alt="thumbnail"
             />
             <div className="grid grid-cols-2 mt-4">
               <p className="text-[#6EACDA] mukta text-xs text-left">{props.auth}</p>
-              <p className="text-[#6EACDA] mukta text-xs text-right">{props.used}</p>
+              <p className="text-[#6EACDA] mukta flex items-center gap-1 justify-end text-xs text-right">
+                <Tech />
+                {props.used}</p>
             </div>
           </CardItem>
           <div className="flex justify-between items-center mt-5">
             <Link
               to={props.dep}
               target="__blank"
-              className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+              className="px-4 py-2 flex gap-2 items-center rounded-xl text-xs font-normal dark:text-white"
             >
-              Deployed →
+              <Cloud /> Deployed →
             </Link>
             <Link
               to={props.gh}

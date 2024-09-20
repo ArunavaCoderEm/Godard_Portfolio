@@ -3,6 +3,7 @@ import Procard from "../Components/Procard";
 import { ProjLbImg, projectsList } from "../Context/Project";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import MWork from "../Icons/MWork";
 
 export default function Projects(): React.ReactNode {
   const [pro, setpro] = useState<ProjLbImg[]>([]);
@@ -55,9 +56,9 @@ export default function Projects(): React.ReactNode {
       <Link
         to={"https://github.com/ArunavaCoderEm?tab=repositories"}
         target="_blank"
-        className="text-white mt-5 mb-10 mx-auto bg-black/80 sha flex justify-center hover:text-[#6EACDA] transition-all duration-300 text-center mukta w-[22rem] p-1 rounded-full hover:translate-y-1"
+        className="text-white mt-5 mb-10 mx-auto bg-black/80 sha flex justify-center hover:text-[#6EACDA] transition-all items-center gap-2 duration-300 text-center mukta w-[22rem] p-1 rounded-full hover:translate-y-1"
       >
-        🎢 More Projects On My GitHub →
+        <MWork /> More Projects On My GitHub →
       </Link>
     </>
   );

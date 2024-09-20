@@ -25,12 +25,12 @@ const AboutMe = (): React.ReactNode => {
         <div className="lg:max-w-6xl w-full my-5 shadow-lg rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-2">
           <div className="md:flex-shrink-0 flex items-center lg:p-5 bg-[#0F0F0F]">
             <img
-              className="h-[30rem] w-full rounded-lg object-cover"
+              className="lg:h-[30rem] w-full rounded-lg object-cover"
               src="./meabb.jpg"
               alt="Profile"
             />
           </div>
-          <div className="lg:p-4 w-full mt-4">
+          <div className="lg:p-4 mx-2 w-full mt-4">
             <div className="p-8 bg-[#0F0F0F] rounded-lg shadow-lg border border-[#6EACDA]">
               <div className="uppercase tracking-wide text-xl text-[#6EACDA] font-extrabold">
                 Hello 👋🏼 !
