@@ -70,7 +70,7 @@ const AboutMe = (): React.ReactNode => {
               <div className="mt-6">
                 <Link
                   to={
-                    "https://drive.google.com/file/d/1ZTmD1gjbP1XSh3FyWEcCVA8QUl_MPtF7/view?usp=sharing"
+                    "https://drive.google.com/file/d/1FBANu0pGE7FKpVnv_sbih68UmN3Z1QYa/view?usp=sharing"
                   }
                   target="_blank"
                   className="relative inline-flex items-center justify-center overflow-hidden rounded-md bg-[#6EACDA] px-4 py-2 text-lg font-bold text-black border-2 border-black transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
