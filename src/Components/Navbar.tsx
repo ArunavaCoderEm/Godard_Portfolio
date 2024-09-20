@@ -1,5 +1,9 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
+import Tech from "../Icons/Tech";
+import Home from "../Icons/Home";
+import About from "../Icons/About";
+import SkillsI from "../Icons/Skills";
 
 export default function Navbar(props: any): React.ReactNode {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -59,46 +63,54 @@ export default function Navbar(props: any): React.ReactNode {
             <a
               onClick={() => setMenu("home")}
               href={props.home}
-              className={`text-sm w-20 text-center rounded-lg p-2 transition-all duration-300 font-semibold hover:underline hover:text-[#6EACDA] underline-offset-4 ${
+              className={`text-sm w-24 text-center rounded-lg p-2 transition-all duration-300 font-semibold hover:underline hover:text-[#6EACDA] underline-offset-4 ${
                 menu === "home"
                   ? "text-[#6EACDA] inssha underline sha underline-offset-4"
                   : "text-white"
               }`}
             >
-              <span className="relative z-10">Home</span>
+              <span className="relative z-10 flex gap-x-2 items-center">
+                <Home />
+                Home</span>
             </a>
             <a
               onClick={() => setMenu("projects")}
               href={props.projects}
-              className={`text-sm w-20 text-center rounded-lg p-2 font-semibold hover:underline hover:text-[#6EACDA] underline-offset-4 ${
+              className={`text-sm w-24 text-center rounded-lg p-2 font-semibold hover:underline hover:text-[#6EACDA] underline-offset-4 ${
                 menu === "projects"
                   ? "text-[#6EACDA] sha underline underline-offset-4 inssha"
                   : "text-white"
               }`}
             >
-              <span className="relative z-10">Projects</span>
+              <span className="relative z-10 flex gap-x-2 items-center">
+                <Tech />
+                Projects</span>
             </a>
             <a
               onClick={() => setMenu("about")}
               href={props.about}
-              className={`text-sm w-20 text-center rounded-lg p-2 transition-all duration-300 font-semibold hover:underline hover:text-[#6EACDA] underline-offset-4 ${
+              className={`text-sm w-24 text-center rounded-lg p-2 transition-all duration-300 font-semibold hover:underline hover:text-[#6EACDA] underline-offset-4 ${
                 menu === "about"
                   ? "text-[#6EACDA] sha underline underline-offset-4 inssha"
                   : "text-white"
               }`}
             >
-              <span className="relative z-10">About</span>
+              <span className="relative flex gap-x-2 items-center z-10">
+                <About />
+                About</span>
             </a>
             <a
               onClick={() => setMenu("skills")}
               href={props.skills}
-              className={`text-sm w-20 text-center rounded-lg p-2 transition-all duration-300 font-semibold hover:underline hover:text-[#6EACDA] underline-offset-4 ${
+              className={`text-sm w-24 text-center rounded-lg p-2 transition-all duration-300 font-semibold hover:underline hover:text-[#6EACDA] underline-offset-4 ${
                 menu === "skills"
                   ? "text-[#6EACDA] sha underline underline-offset-4 inssha"
                   : "text-white"
               }`}
             >
-              <span className="relative z-10">Skills</span>
+              <span className="relative flex items-center gap-x-2 z-10">
+                <SkillsI />
+                Skills</span>
             </a>
           </nav>
         </div>
@@ -151,8 +163,9 @@ export default function Navbar(props: any): React.ReactNode {
                 menu === "home"
                   ? "text-[#6EACDA] sha underline underline-offset-4 inssha"
                   : "bg-black text-white"
-              } w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}
+              } w-80 flex gap-x-2 items-center justify-center font-semibold hover:underline underline-offset-4`}
             >
+              <Home />
               Home
             </a>
             <a
@@ -162,8 +175,9 @@ export default function Navbar(props: any): React.ReactNode {
                 menu === "projects"
                   ? "text-[#6EACDA] sha underline underline-offset-4 inssha"
                   : "bg-black text-white"
-              } w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}
+              } w-80 flex gap-x-2 items-center justify-center font-semibold hover:underline underline-offset-4`}
             >
+              <Tech />
               Projects
             </a>
             <a
@@ -173,8 +187,9 @@ export default function Navbar(props: any): React.ReactNode {
                 menu === "about"
                   ? "text-[#6EACDA] sha underline underline-offset-4 inssha"
                   : "bg-black text-white"
-              } w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}
+              } w-80 flex gap-x-2 items-center justify-center font-semibold hover:underline underline-offset-4`}
             >
+              <About />
               About
             </a>
             <a
@@ -184,8 +199,9 @@ export default function Navbar(props: any): React.ReactNode {
                 menu === "skills"
                   ? "text-[#6EACDA] sha underline underline-offset-4 inssha"
                   : "bg-black text-white"
-              } w-80 flex items-center justify-center font-semibold hover:underline underline-offset-4`}
+              } w-80 flex gap-x-2 items-center justify-center font-semibold hover:underline underline-offset-4`}
             >
+              <SkillsI />
               Skills
             </a>
             <a

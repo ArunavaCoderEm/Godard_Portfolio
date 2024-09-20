@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { CardBody, CardContainer, CardItem } from "../Components/UI/3d-card";
 import Code from "../Icons/Code";
 import Cloud from "../Icons/Cloud";
-import Tech from "../Icons/Tech";
 
 export default function Procard(props: any): React.ReactNode {
   return (
@@ -33,8 +32,7 @@ export default function Procard(props: any): React.ReactNode {
             />
             <div className="grid grid-cols-2 mt-4">
               <p className="text-[#6EACDA] mukta text-xs text-left">{props.auth}</p>
-              <p className="text-[#6EACDA] mukta flex items-center gap-1 justify-end text-xs text-right">
-                <Tech />
+              <p className="text-[#6EACDA] mukta text-xs text-right">
                 {props.used}</p>
             </div>
           </CardItem>
