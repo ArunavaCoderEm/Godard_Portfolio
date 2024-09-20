@@ -5,14 +5,6 @@ export interface LabeledValue {
 
 export const skills : LabeledValue[] = [
     {
-        img : "./html5.png",
-        label : "HTML"
-    },
-    {
-        img : "./css3.png",
-        label : "CSS"
-    },
-    {
         img : "./javascript.png",
         label : "JavaScript"
     },
@@ -23,6 +15,14 @@ export const skills : LabeledValue[] = [
     {
         img : "./python.png",
         label : "Python"
+    },
+    {
+        img : "./react.png",
+        label : "React"
+    },
+    {
+        img : "./node.png",
+        label : "Node"
     },
     {
         img : "./c.png",
@@ -53,12 +53,12 @@ export const skills : LabeledValue[] = [
         label : "Firebase"
     },
     {
-        img : "./react.png",
-        label : "React"
+        img : "./html5.png",
+        label : "HTML"
     },
     {
-        img : "./node.png",
-        label : "Node JS"
+        img : "./css3.png",
+        label : "CSS"
     },
     {
         img : "./express.png",
@@ -66,7 +66,7 @@ export const skills : LabeledValue[] = [
     },
     {
         img : "./hono.png",
-        label : "Hono JS"
+        label : "Hono"
     },
     {
         img : "./websocket.png",
@@ -154,5 +154,9 @@ export const tools : LabeledValue[] = [
     {
         img : "./Nt.png",
         label : "Netlify"
+    },
+    {
+        img : "./post.png",
+        label : "PostMan"
     },
 ]

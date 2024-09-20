@@ -45,7 +45,7 @@ const Skills = (): React.ReactNode => {
           <h1 className="text-4xl p-5 bg-clip-text text-transparent bg-gradient-to-b from-[#6EACDA] to-white font-extrabold">
             What Are My Programming Skills ?
           </h1>
-          <h3 className="px-5 lg:ml-2 my-2 text-white/80 mukta font-normal rounded-lg p-5">
+          <h3 className="px-7 lg:ml-3 my-2 text-white/80 mukta font-normal rounded-lg py-5">
             My expertise lies in{" "}
             <span className="font-semibold text-[#6EACDA]">
               Frontend development,{" "}
