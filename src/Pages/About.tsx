@@ -23,14 +23,14 @@ const AboutMe = (): React.ReactNode => {
         className="flex mt-10 items-center justify-center min-h-screen py-5 bg-[#0F0F0F]"
       >
         <div className="lg:max-w-6xl w-full my-5 shadow-lg rounded-lg overflow-hidden grid grid-cols-1 md:grid-cols-2">
-          <div className="md:flex-shrink-0 flex items-center lg:p-5 bg-[#0F0F0F]">
+          <div className="md:flex-shrink-0 md:mx-1 lg:mx-2 flex items-center lg:p-5 bg-[#0F0F0F]">
             <img
               className="lg:h-[30rem] w-full rounded-lg object-cover"
               src="./meabb.jpg"
               alt="Profile"
             />
           </div>
-          <div className="lg:p-4 mx-2 w-full mt-4">
+          <div className="lg:p-4 md:mx-0 w-full mt-4">
             <div className="p-8 bg-[#0F0F0F] rounded-lg shadow-lg border border-[#6EACDA]">
               <div className="uppercase tracking-wide text-xl text-[#6EACDA] font-extrabold">
                 Hello 👋🏼 !
