@@ -31,7 +31,7 @@ export default function Exp(): React.ReactNode {
       icon: (
         <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://www.linkedin.com/in/arunava-dutta-2b94bb253/",
+      href: "https://www.linkedin.com/in/godutta/",
     },
     {
       title: "Twitter",
