@@ -10,6 +10,15 @@ export interface ProjLbImg {
 
 export const projectsList: ProjLbImg[] = [
     {
+        label: "ReviewR",
+        img: "./rr.png",
+        ghlink: "https://github.com/ArunavaCoderEm/ReviewR",
+        deplink: "https://review-r.vercel.app/",
+        auth: "Arunava Dutta",
+        desc: "A web-based game where users spin a wheel in a game room to score points.",
+        used: "React, TS, Websocket",
+    },
+    {
         label: "Number Roulette",
         img: "./nr.png",
         ghlink: "https://github.com/ArunavaCoderEm/Number-Roulette",
