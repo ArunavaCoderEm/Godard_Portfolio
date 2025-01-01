@@ -37,6 +37,15 @@ export const projectsList: ProjLbImg[] = [
         used: "MERN, Clerk, Python",
     },
     {
+        label: "SupesView",
+        img: "./sps.png",
+        ghlink: "https://github.com/ArunavaCoderEm/Supes-View",
+        deplink: "https://supesview.pages.dev/",
+        auth: "Arunava Dutta",
+        desc: "Website to get superhero information.",
+        used: "React, Tanstack, ShadCN",
+    },
+    {
         label: "Vehycle",
         img: "./veh.png",
         ghlink: "https://github.com/ArunavaCoderEm/Vehycle",
