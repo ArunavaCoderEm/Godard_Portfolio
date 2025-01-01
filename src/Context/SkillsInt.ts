@@ -179,4 +179,12 @@ export const tools : LabeledValue[] = [
         img : "./post.png",
         label : "PostMan"
     },
+    {
+        img : "./colab.png",
+        label : "Colab"
+    },
+    {
+        img : "./strm.png",
+        label : "Streamlit"
+    },
 ]
