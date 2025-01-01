@@ -83,7 +83,7 @@ export const projectsList: ProjLbImg[] = [
     {
         label: "Edemy",
         img: "./edm.png",
-        type: "Saas",
+        type: "SIH 23 Final",
         ghlink: "https://github.com/eDemy-SIH/eDemy-Website",
         deplink: "https://edemy-32175.vercel.app",
         auth: "Arunava Dutta",
@@ -119,5 +119,15 @@ export const projectsList: ProjLbImg[] = [
         auth: "Arunava Dutta",
         desc: "An online bookstore with detailed descriptions of books.",
         used: "ReactJS, TW",
+    },
+    {
+        label: "ScrapeSmart",
+        img: "./scr.png",
+        type: "Scrapping",
+        ghlink: "https://github.com/ArunavaCoderEm/ScrapeSmart",
+        deplink: "https://scrapesmart003.streamlit.app/",
+        auth: "Arunava Dutta",
+        desc: "A website to scrape other website data also with AI prompts.",
+        used: "Python, Streamlit",
     },
 ];

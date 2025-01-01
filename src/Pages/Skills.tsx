@@ -42,9 +42,12 @@ const Skills = (): React.ReactNode => {
         className="grid lg:grid-cols-2 mt-32 sm:grid-cols-1"
       >
         <div className="p-5 flex flex-col items-center">
-          <h1 className="text-4xl p-5 bg-clip-text text-transparent bg-gradient-to-b from-[#6EACDA] to-white font-extrabold">
-            What Are My Programming Skills ?
-          </h1>
+          <div className="md:ml-9 ml-1 w-full">
+            <h1 className="text-4xl p-5 bg-clip-text text-transparent bg-gradient-to-b from-[#6EACDA] to-white font-extrabold">
+              What Are My <br />
+              Programming Skills ?
+            </h1>
+          </div>
           <h3 className="px-7 lg:ml-3 my-2 text-white/80 mukta font-normal rounded-lg py-5">
             My expertise lies in{" "}
             <span className="font-semibold text-[#6EACDA]">
