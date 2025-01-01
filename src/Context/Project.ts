@@ -90,4 +90,22 @@ export const projectsList: ProjLbImg[] = [
         desc: "A platform for buying and selling pets, with user sign-in and listing features.",
         used: "React, FB, TW",
     },
+    {
+        label: "TaskEase",
+        img: "./task.jpg",
+        ghlink: "https://github.com/ArunavaCoderEm/TaskEase",
+        deplink: "https://taskease-mu.vercel.app/",
+        auth: "Arunava Dutta",
+        desc: "A todo manager to streamline task management with priority tracking.",
+        used: "MERN, TS, TW",
+    },
+    {
+        label: "NovelNest",
+        img: "./novel.jpg",
+        ghlink: "https://github.com/ArunavaCoderEm/Novel-Nest",
+        deplink: "https://novelnest-seven.vercel.app",
+        auth: "Arunava Dutta",
+        desc: "An online bookstore with detailed descriptions of books.",
+        used: "ReactJS, TW",
+    },
 ];
