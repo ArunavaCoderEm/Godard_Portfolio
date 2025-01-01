@@ -11,9 +11,12 @@ export default function Procard(props: any): React.ReactNode {
         <CardBody className="hover:border-[2px] transition-all duration-300 border border-gray-600/50  hover:border-[#6EACDA] relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] bg-black w-auto sm:w-[30rem] h-auto rounded-xl p-6">
           <CardItem
             translateZ="50"
-            className="text-xl flex gap-2 items-center font-bold text-[#6EACDA]"
+            className="text-xl justify-between w-full flex gap-2 items-center font-bold text-[#6EACDA]"
           >
-           <Code />  {props.title}
+            <div className="flex items-center gap-2">
+              <Code /> {props.title}
+            </div>
+            <span className="text-black bg-white px-3 py-1 rounded-full text-xs">{props.type}</span>
           </CardItem>
           <CardItem
             as="p"
@@ -31,9 +34,12 @@ export default function Procard(props: any): React.ReactNode {
               alt="thumbnail"
             />
             <div className="grid grid-cols-2 mt-4">
-              <p className="text-[#6EACDA] mukta text-xs text-left">{props.auth}</p>
+              <p className="text-[#6EACDA] mukta text-xs text-left">
+                {props.auth}
+              </p>
               <p className="text-[#6EACDA] mukta text-xs text-right">
-                {props.used}</p>
+                {props.used}
+              </p>
             </div>
           </CardItem>
           <div className="flex justify-between items-center mt-5">

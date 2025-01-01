@@ -44,6 +44,7 @@ export default function Projects(): React.ReactNode {
               img={item.img}
               title={item.label}
               desc={item.desc}
+              type={item.type}
               gh={item.ghlink}
               dep={item.deplink}
               auth={item.auth}
