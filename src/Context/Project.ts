@@ -15,8 +15,8 @@ export const projectsList: ProjLbImg[] = [
         ghlink: "https://github.com/ArunavaCoderEm/ReviewR",
         deplink: "https://review-r.vercel.app/",
         auth: "Arunava Dutta",
-        desc: "A web-based game where users spin a wheel in a game room to score points.",
-        used: "React, TS, Websocket",
+        desc: "Simply generate ready-to-use template code of authentic reviews.",
+        used: "NextJS, Prisma, NeonDB",
     },
     {
         label: "Number Roulette",
@@ -26,6 +26,15 @@ export const projectsList: ProjLbImg[] = [
         auth: "Arunava Dutta",
         desc: "A web-based game where users spin a wheel in a game room to score points.",
         used: "React, TS, Websocket",
+    },
+    {
+        label: "KhetiSathi",
+        img: "./ks.png",
+        ghlink: "https://github.com/SIH-CodeFusers/AIgro",
+        deplink: "https://khetisathi-4286.pages.dev/",
+        auth: "Arunava Dutta",
+        desc: "AI based website to help farmers with vast features.",
+        used: "MERN, Clerk, Python",
     },
     {
         label: "Vehycle",
@@ -44,15 +53,6 @@ export const projectsList: ProjLbImg[] = [
         auth: "Arunava Dutta",
         desc: "AI-powered site for evaluating student marks and managing assignments.",
         used: "MERN, FB, TW",
-    },
-    {
-        label: "TaskEase",
-        img: "./task.jpg",
-        ghlink: "https://github.com/ArunavaCoderEm/TaskEase",
-        deplink: "https://taskease-mu.vercel.app/",
-        auth: "Arunava Dutta",
-        desc: "A todo manager to streamline task management with priority tracking.",
-        used: "MERN, TS, TW",
     },
     {
         label: "StudyGenie",
@@ -80,14 +80,5 @@ export const projectsList: ProjLbImg[] = [
         auth: "Arunava Dutta",
         desc: "A platform for buying and selling pets, with user sign-in and listing features.",
         used: "React, FB, TW",
-    },
-    {
-        label: "NovelNest",
-        img: "./novel.jpg",
-        ghlink: "https://github.com/ArunavaCoderEm/Novel-Nest",
-        deplink: "https://novelnest-seven.vercel.app",
-        auth: "Arunava Dutta",
-        desc: "An online bookstore with detailed descriptions of books.",
-        used: "ReactJS, TW",
     },
 ];
