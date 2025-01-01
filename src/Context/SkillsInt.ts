@@ -17,6 +17,10 @@ export const skills : LabeledValue[] = [
         label : "Python"
     },
     {
+        img : "./next.webp",
+        label : "NextJS"
+    },
+    {
         img : "./react.png",
         label : "React"
     },
@@ -37,6 +41,10 @@ export const skills : LabeledValue[] = [
         label : "Bootstrap"
     },
     {
+        img : "./shad.png",
+        label : "ShadCN"
+    },
+    {
         img : "./tailwind.png",
         label : "Tailwind"
     },
@@ -45,12 +53,24 @@ export const skills : LabeledValue[] = [
         label : "SCSS"
     },
     {
+        img : "./postg.png",
+        label : "Postgres"
+    },
+    {
         img : "./mongodb.png",
         label : "MongoDB"
     },
     {
+        img : "./neon.jpg",
+        label : "NeonDB"
+    },
+    {
         img : "./firebase.png",
         label : "Firebase"
+    },
+    {
+        img : "./tans.png",
+        label : "Tanstack"
     },
     {
         img : "./html5.png",
