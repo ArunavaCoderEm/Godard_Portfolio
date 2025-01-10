@@ -1,7 +1,17 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { useParams } from "react-router-dom";
+import { projectsList, ProjLbImg } from "../Context/Project";
 
 export default function ProductPage(): React.ReactNode {
+
+  const param = useParams();
+
+  const id: number | undefined = Number(param.id);
+
+  const element: ProjLbImg = projectsList[id ?? 0];
+
+
   return (
     <motion.div
       initial={{ opacity: 0.5, y: 100 }}
