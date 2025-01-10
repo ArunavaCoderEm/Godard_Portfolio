@@ -12,7 +12,7 @@ export default function Page(): React.ReactNode {
     <>
       <BackgroundGrid />
       <Navbar
-        home="#"
+        home="/#"
         about="#about"
         skills="#skills"
         contact="#contact"
