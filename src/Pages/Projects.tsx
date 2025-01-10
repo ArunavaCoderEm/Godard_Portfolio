@@ -42,7 +42,6 @@ export default function Projects(): React.ReactNode {
           <div key={idx} className="col-span-1">
             <Link 
               to={`/projectpage/${item.index}/${item.label}`}
-
               >
               <Procard
                 img={item.img}
