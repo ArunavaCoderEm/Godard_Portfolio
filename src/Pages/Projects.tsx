@@ -38,18 +38,23 @@ export default function Projects(): React.ReactNode {
         id="projects"
         className="mt-32 grid lg:grid-cols-4 md:grid-cols-2 p-4 gap-3 sm:grid-cols-1"
       >
-        {pro.map((item, index) => (
-          <div key={index} className="col-span-1">
-            <Procard
-              img={item.img}
-              title={item.label}
-              desc={item.desc}
-              type={item.type}
-              gh={item.ghlink}
-              dep={item.deplink}
-              auth={item.auth}
-              used={item.used}
-            />
+        {pro.map((item, idx) => (
+          <div key={idx} className="col-span-1">
+            <Link 
+              to={`/projectpage/${item.index}/${item.label}`}
+
+              >
+              <Procard
+                img={item.img}
+                title={item.label}
+                desc={item.desc}
+                type={item.type}
+                gh={item.ghlink}
+                dep={item.deplink}
+                auth={item.auth}
+                used={item.used}
+              />
+            </Link>
           </div>
         ))}
       </motion.div>

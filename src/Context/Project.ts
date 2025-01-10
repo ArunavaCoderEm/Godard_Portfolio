@@ -51,7 +51,7 @@ export const projectsList: ProjLbImg[] = [
         ghlink: "https://github.com/ArunavaCoderEm/Supes-View",
         deplink: "https://supesview.pages.dev/",
         auth: "Arunava Dutta",
-        desc: "Website to get superhero information.",
+        desc: "Website to get superhero information with caching using tanstack query.",
         used: "React, Tanstack, ShadCN",
         index: 3
     },

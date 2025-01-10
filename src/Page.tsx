@@ -11,6 +11,7 @@ export default function Page():React.ReactNode {
         <BackgroundGrid />
         <Routes>
             <Route path='/' element={<MainPage />} />
+            <Route path='/projectpage/:id/:name' element={<MainPage />} />
             <Route path='/privacy' element={<PrivacyPolicyPage />} />
             <Route path='/*' element={<Error_404 />} />
         </Routes>
