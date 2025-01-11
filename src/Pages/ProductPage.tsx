@@ -30,9 +30,17 @@ export default function ProductPage(): React.ReactNode {
         duration: 0.4,
         ease: "easeInOut",
       }}
-      className="grid m-5 rounded-md min-h-screen bg-red-500 grid-cols-1 gap-y-10 mt-20 mukta relative h-auto"
+      className="grid m-5 z-[103] rounded-md min-h-screen bg-[#070707] grid-cols-1 gap-y-10 mt-20 mukta relative h-auto"
     > 
-        lk
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+          
+        </div>
     </motion.div>
   );
 }
