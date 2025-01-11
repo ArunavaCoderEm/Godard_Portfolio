@@ -4,22 +4,19 @@ import { useParams } from "react-router-dom";
 import { projectsList, ProjLbImg } from "../Context/Project";
 
 export default function ProductPage(): React.ReactNode {
+  const param = useParams();
 
-    
-    const param = useParams();
-    
-    const id: number | undefined = Number(param.id);
+  const id: number | undefined = Number(param.id);
 
-    useEffect(() => {
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: "smooth"
-        })
-    }, [param.id]);
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, [param.id]);
 
   const element: ProjLbImg = projectsList[id ?? 0];
-
 
   return (
     <motion.div
@@ -31,16 +28,22 @@ export default function ProductPage(): React.ReactNode {
         ease: "easeInOut",
       }}
       className="grid m-5 z-[103] rounded-md min-h-screen bg-[#070707] grid-cols-1 gap-y-10 mt-20 mukta relative h-auto"
-    > 
-        <div>
+    >
+      <div className="flex flex-col h-screen">
 
+        <div className="bg-red-500 flex-shrink-0 flex-grow-0 h-[15%] w-full">
+          ui
         </div>
-        <div>
 
+
+        <div className="bg-green-500 flex-grow h-[70%] w-full">iou</div>
+
+
+        <div className="bg-blue-500 flex-shrink-0 flex-grow-0 h-[15%] w-full">
+          end
         </div>
-        <div>
-          
-        </div>
+        
+      </div>
     </motion.div>
   );
 }
