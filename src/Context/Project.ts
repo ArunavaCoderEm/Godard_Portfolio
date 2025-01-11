@@ -13,7 +13,7 @@ export interface ProjLbImg {
 export const projectsList: ProjLbImg[] = [
     {
         label: "ReviewR",
-        img: "./rr.png",
+        img: "/rr.png",
         type: "Saas",
         ghlink: "https://github.com/ArunavaCoderEm/ReviewR",
         deplink: "https://review-r.vercel.app/",
@@ -24,7 +24,7 @@ export const projectsList: ProjLbImg[] = [
     },
     {
         label: "Number Roulette",
-        img: "./nr.png",
+        img: "/nr.png",
         type: "Game",
         ghlink: "https://github.com/ArunavaCoderEm/Number-Roulette",
         deplink: "https://github.com/ArunavaCoderEm/Number-Roulette",
@@ -35,7 +35,7 @@ export const projectsList: ProjLbImg[] = [
     },
     {
         label: "KhetiSathi",
-        img: "./ks.png",
+        img: "/ks.png",
         type: "SIH 24 winner",
         ghlink: "https://github.com/SIH-CodeFusers/AIgro",
         deplink: "https://khetisathi-4286.pages.dev/",
@@ -46,7 +46,7 @@ export const projectsList: ProjLbImg[] = [
     },
     {
         label: "SupesView",
-        img: "./sps.png",
+        img: "/sps.png",
         type: "Caching",
         ghlink: "https://github.com/ArunavaCoderEm/Supes-View",
         deplink: "https://supesview.pages.dev/",
@@ -57,7 +57,7 @@ export const projectsList: ProjLbImg[] = [
     },
     {
         label: "Vehycle",
-        img: "./veh.png",
+        img: "/veh.png",
         type: "Saas",
         ghlink: "https://github.com/ArunavaCoderEm/Vehycle",
         deplink: "https://vehycle.vercel.app/",
@@ -68,7 +68,7 @@ export const projectsList: ProjLbImg[] = [
     },
     {
         label: "RepXai",
-        img: "./repx.jpg",
+        img: "/repx.jpg",
         type: "Saas",
         ghlink: "https://github.com/Rep-X-AI/repx-ai",
         deplink: "https://repxai.vercel.app",
@@ -79,7 +79,7 @@ export const projectsList: ProjLbImg[] = [
     },
     {
         label: "StudyGenie",
-        img: "./ext.png",
+        img: "/ext.png",
         type: "Saas",
         ghlink: "https://github.com/CodeFusers/frontend",
         deplink: "https://studygenie-cf.vercel.app",
@@ -90,7 +90,7 @@ export const projectsList: ProjLbImg[] = [
     },
     {
         label: "Edemy",
-        img: "./edm.png",
+        img: "/edm.png",
         type: "SIH 23 Final",
         ghlink: "https://github.com/eDemy-SIH/eDemy-Website",
         deplink: "https://edemy-32175.vercel.app",
@@ -101,7 +101,7 @@ export const projectsList: ProjLbImg[] = [
     },
     {
         label: "PetMe",
-        img: "./pet.png",
+        img: "/pet.png",
         type: "Saas",
         ghlink: "https://github.com/ArunavaCoderEm/PetMe-Home-For-Pets",
         deplink: "https://petme-one.vercel.app",
@@ -112,7 +112,7 @@ export const projectsList: ProjLbImg[] = [
     },
     {
         label: "TaskEase",
-        img: "./task.jpg",
+        img: "/task.jpg",
         type: "Saas",
         ghlink: "https://github.com/ArunavaCoderEm/TaskEase",
         deplink: "https://taskease-mu.vercel.app/",
@@ -123,7 +123,7 @@ export const projectsList: ProjLbImg[] = [
     },
     {
         label: "NovelNest",
-        img: "./novel.jpg",
+        img: "/novel.jpg",
         type: "APIs",
         ghlink: "https://github.com/ArunavaCoderEm/Novel-Nest",
         deplink: "https://novelnest-seven.vercel.app",
@@ -134,7 +134,7 @@ export const projectsList: ProjLbImg[] = [
     },
     {
         label: "ScrapeSmart",
-        img: "./scr.png",
+        img: "/scr.png",
         type: "Scrapping",
         ghlink: "https://github.com/ArunavaCoderEm/ScrapeSmart",
         deplink: "https://scrapesmart003.streamlit.app/",
