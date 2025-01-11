@@ -6,11 +6,13 @@ import PrivacyPolicyPage from "./Pages/Privacy";
 import Error_404 from "./Pages/Error_404";
 import ProductPage from "./Pages/ProductPage";
 import Navbar from "./Components/Navbar";
+import MinimalSocialsFooter from "./Components/Footer";
 
 export default function Page(): React.ReactNode {
   return (
     <>
       <BackgroundGrid />
+
       <Navbar
         home="/#"
         about="#about"
@@ -18,12 +20,15 @@ export default function Page(): React.ReactNode {
         contact="#contact"
         projects="#projects"
       />
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/projectpage/:id/:name" element={<ProductPage />} />
-        <Route path="/privacy" element={<PrivacyPolicyPage />} />
-        <Route path="/*" element={<Error_404 />} />
-      </Routes>
+      <div className="min-h-[100vh]">
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/projectpage/:id/:name" element={<ProductPage />} />
+          <Route path="/privacy" element={<PrivacyPolicyPage />} />
+          <Route path="/*" element={<Error_404 />} />
+        </Routes>
+      </div>
+      <MinimalSocialsFooter />
     </>
   );
 }

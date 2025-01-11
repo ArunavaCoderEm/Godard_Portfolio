@@ -5,7 +5,6 @@ import About from './About'
 import Skills from './Skills'
 import Projects from './Projects'
 import Contact from './Contact'
-import MinimalSocialsFooter from '../Components/Footer'
 import TestimonialSlider from '../Components/Testimonials'
 
 export default function MainPage():React.ReactNode {
@@ -18,7 +17,6 @@ export default function MainPage():React.ReactNode {
     <Skills />
     <TestimonialSlider />
     <Contact />
-    <MinimalSocialsFooter />
     </>
   )
 }
