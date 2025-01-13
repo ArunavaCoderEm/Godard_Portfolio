@@ -19,6 +19,8 @@ export default function ProductPage(): React.ReactNode {
 
   const element: ProjLbImg = projectsList[id ?? 0];
 
+  const len: number = projectsList.length; 
+
   return (
     <motion.div
       initial={{ opacity: 0.5 }}
@@ -65,10 +67,10 @@ export default function ProductPage(): React.ReactNode {
             })}
           </div>
           <div className="flex items-center justify-center gap-3">
-            <button className="bg-[#6EACDA] px-3 py-2 hover:opacity-90 transition-all duration-150 rounded-md text-black tracking-tight flex items-center gap-2">
+            <button disabled={id === 0} className={`bg-[#6EACDA] px-3 py-2 hover:opacity-90 transition-all duration-150 rounded-md text-black tracking-tight flex items-center gap-2 ${id === 0 ? "cursor-not-allowed" : ""}`}>
               <ArrowLeftCircle className="w-4 h-4" /> Prev
             </button>
-            <button className="bg-[#6EACDA] px-3 py-2 hover:opacity-90 transition-all duration-150 rounded-md text-black tracking-tight flex items-center gap-2">
+            <button disabled={id === len - 1} className={`bg-[#6EACDA] px-3 py-2 hover:opacity-90 transition-all duration-150 rounded-md text-black tracking-tight flex items-center gap-2 ${id === len - 1 ? "cursor-not-allowed" : ""}`}>
               Next <ArrowRightCircle className="w-4 h-4" />{" "}
             </button>
           </div>
