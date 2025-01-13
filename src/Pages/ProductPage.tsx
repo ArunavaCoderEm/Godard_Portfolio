@@ -47,7 +47,9 @@ export default function ProductPage(): React.ReactNode {
           <div className="p-3 flex items-center justify-center">
             <img src={element.img} className="bg-red-500 h-96 w-full object-fit rounded-md" alt="img" />
           </div>
-          <div>dmgf</div>
+          <div className="p-3 flex items-center justify-center">
+            <h2 className="text-white">{element.desc}</h2>
+          </div>
         </div>
 
         <div className="items-center justify-between rounded-md flex md:flex-row p-3 flex-col h-[15%] w-full">
