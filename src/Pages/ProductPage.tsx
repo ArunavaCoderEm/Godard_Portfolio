@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { projectsList, ProjLbImg } from "../Context/Project";
 import { Airplay, ArrowLeftCircle, ArrowRightCircle, User } from "lucide-react";
 
 export default function ProductPage(): React.ReactNode {
   const param = useParams();
 
+  const nav = useNavigate();
   const id: number | undefined = Number(param.id);
 
   useEffect(() => {
@@ -69,10 +70,14 @@ export default function ProductPage(): React.ReactNode {
             })}
           </div>
           <div className="flex items-center justify-center gap-3">
-            <button disabled={id === 0} className={`bg-[#6EACDA] px-3 py-2 hover:opacity-90 transition-all duration-150 rounded-md text-black tracking-tight flex items-center gap-2 ${id === 0 ? "cursor-not-allowed" : ""}`}>
+            <button onClick={() => {
+              nav(`/projectpage/${id - 1}/${projectsList[id - 1].label}`);
+            }} disabled={id === 0} className={`bg-[#6EACDA] px-3 py-2 hover:opacity-90 transition-all duration-150 rounded-md text-black tracking-tight flex items-center gap-2 ${id === 0 ? "cursor-not-allowed" : ""}`}>
               <ArrowLeftCircle className="w-4 h-4" /> Prev
             </button>
-            <button disabled={id === len - 1} className={`bg-[#6EACDA] px-3 py-2 hover:opacity-90 transition-all duration-150 rounded-md text-black tracking-tight flex items-center gap-2 ${id === len - 1 ? "cursor-not-allowed" : ""}`}>
+            <button onClick={() => {
+              nav(`/projectpage/${id + 1}/${projectsList[id + 1].label}`);
+            }} disabled={id === len - 1} className={`bg-[#6EACDA] px-3 py-2 hover:opacity-90 transition-all duration-150 rounded-md text-black tracking-tight flex items-center gap-2 ${id === len - 1 ? "cursor-not-allowed" : ""}`}>
               Next <ArrowRightCircle className="w-4 h-4" />{" "}
             </button>
           </div>
