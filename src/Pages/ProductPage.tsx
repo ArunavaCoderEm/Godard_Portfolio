@@ -20,65 +20,120 @@ export default function ProductPage(): React.ReactNode {
 
   const element: ProjLbImg = projectsList[id ?? 0];
 
-  const len: number = projectsList.length; 
+  const len: number = projectsList.length;
 
   return (
     <motion.div
-      initial={{ opacity: 0.5 }}
-      whileInView={{ opacity: 1 }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
       transition={{
-        delay: 0.0,
-        duration: 0.4,
-        ease: "easeInOut",
+        duration: 0.5,
+        ease: "easeOut",
       }}
-      className="grid m-5 z-[103] rounded-md min-h-screen bg-[#070707]/70 grid-cols-1 gap-y-10 mt-20 p-1 md:p-3 mukta relative h-auto"
+      className="min-h-screen bg-gradient-to-b from-[#070707] to-[#121212] p-4 md:p-6 lg:p-8"
     >
-      <div className="flex flex-col h-screen">
-        <div className="rounded-md flex md:flex-row flex-col justify-between items-center h-[15%] w-full px-3 py-2">
-          <h1 className="text-3xl lg:text-5xl font-extrabold bg-clip-text bg-gradient-to-b text-transparent from-[#6EACDA] via-[#6EACDA] to-[#fff] mukta text-left">
-            {element.label}
-          </h1>
-          <h2 className="text-black flex items-center gap-2 bg-white px-3 py-2 rounded-md">
-            <User className="w-4 h-4" />
-            {element.auth}
-          </h2>
-        </div>
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col h-full space-y-8">
 
-        <div className="rounded-md gap-2 flex-grow h-[70%] w-full grid md:grid-cols-2 grid-cols-1">
-          <div className="p-3 flex items-center justify-center">
-            <img src={element.img} className="shadow-xl h-96 w-full object-fit rounded-md" alt="img" />
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0 bg-black/40 p-6 rounded-2xl backdrop-blur-sm">
+            <div className="space-y-2">
+              <motion.h1
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                className="text-4xl lg:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#6EACDA] via-[#8BC6EC] to-[#9FACE6]"
+              >
+                {element.label}
+              </motion.h1>
+              {element.type && (
+                <p className="text-gray-400 text-lg">{element.type}</p>
+              )}
+            </div>
+            <div className="flex items-center space-x-3">
+              <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-xl flex items-center space-x-2">
+                <User className="w-5 h-5 text-[#6EACDA]" />
+                <span className="text-white font-medium">{element.auth}</span>
+              </div>
+            </div>
           </div>
-          <div className="p-3 flex items-center justify-center">
-            <h2 className="text-white">{element.desc}</h2>
-          </div>
-        </div>
 
-        <div className="items-center justify-between rounded-md flex md:flex-row p-3 flex-col h-[15%] w-full">
-          <div className="flex p-3 gap-2 items-center">
-            {element.used.split(",").map((item: string, idx: number) => {
-              return (
-                <>
-                  <h3
-                    key={idx}
-                    className="text-black flex items-center gap-2 bg-white rounded-md px-3 py-2"
-                  >
-                    <Airplay className="w-4 h-4" />
-                    {item}
-                  </h3>
-                </>
-              );
-            })}
+          <div className="grid md:grid-cols-2 gap-8 h-full">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="relative group"
+            >
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#6EACDA] to-[#9FACE6] rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-300"></div>
+              <div className="relative">
+                <img
+                  src={element.img}
+                  className="w-full h-[500px] object-cover rounded-xl shadow-2xl"
+                  alt={element.label}
+                />
+              </div>
+            </motion.div>
+
+            <div className="flex flex-col justify-between space-y-6">
+              <div className="bg-black/40 p-6 rounded-xl backdrop-blur-sm">
+                <h2 className="text-2xl font-bold text-white mb-4">
+                  Project Overview
+                </h2>
+                <p className="text-gray-300 leading-relaxed text-lg">
+                  {element.desc}
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="text-xl font-semibold text-white">
+                  Technologies Used
+                </h3>
+                <div className="flex flex-wrap gap-3">
+                  {element.used.split(",").map((item: string, idx: number) => (
+                    <motion.div
+                      key={idx}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: idx * 0.1 }}
+                      className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-xl flex items-center space-x-2"
+                    >
+                      <Airplay className="w-4 h-4 text-[#6EACDA]" />
+                      <span className="text-white">{item.trim()}</span>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="flex items-center justify-center gap-3">
-            <button onClick={() => {
-              nav(`/projectpage/${id - 1}/${projectsList[id - 1].label}`);
-            }} disabled={id === 0} className={`bg-[#6EACDA] px-3 py-2 hover:opacity-90 transition-all duration-150 rounded-md text-black tracking-tight flex items-center gap-2 ${id === 0 ? "cursor-not-allowed" : ""}`}>
-              <ArrowLeftCircle className="w-4 h-4" /> Prev
+
+          <div className="flex justify-between items-center pt-8">
+            <button
+              onClick={() =>
+                nav(`/projectpage/${id - 1}/${projectsList[id - 1].label}`)
+              }
+              disabled={id === 0}
+              className={`flex items-center space-x-2 px-6 py-3 rounded-xl transition-all duration-300 ${
+                id === 0
+                  ? "bg-gray-700/50 cursor-not-allowed"
+                  : "bg-gradient-to-r from-[#6EACDA] to-[#9FACE6] hover:shadow-lg hover:shadow-[#6EACDA]/20"
+              }`}
+            >
+              <ArrowLeftCircle className="w-5 h-5" />
+              <span>Previous Project</span>
             </button>
-            <button onClick={() => {
-              nav(`/projectpage/${id + 1}/${projectsList[id + 1].label}`);
-            }} disabled={id === len - 1} className={`bg-[#6EACDA] px-3 py-2 hover:opacity-90 transition-all duration-150 rounded-md text-black tracking-tight flex items-center gap-2 ${id === len - 1 ? "cursor-not-allowed" : ""}`}>
-              Next <ArrowRightCircle className="w-4 h-4" />{" "}
+
+            <button
+              onClick={() =>
+                nav(`/projectpage/${id + 1}/${projectsList[id + 1].label}`)
+              }
+              disabled={id === len - 1}
+              className={`flex items-center space-x-2 px-6 py-3 rounded-xl transition-all duration-300 ${
+                id === len - 1
+                  ? "bg-gray-700/50 cursor-not-allowed"
+                  : "bg-gradient-to-r from-[#9FACE6] to-[#6EACDA] hover:shadow-lg hover:shadow-[#6EACDA]/20"
+              }`}
+            >
+              <span>Next Project</span>
+              <ArrowRightCircle className="w-5 h-5" />
             </button>
           </div>
         </div>
