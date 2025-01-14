@@ -82,11 +82,15 @@ export default function ProductPage(): React.ReactNode {
                 />
               </div>
               <div className="mt-5 p-2 flex gap-2 justify-center items-center">
-                <button className="bg-white text-black px-3 py-2 flex items-center gap-2 rounded-md">
+                <button onClick={() => {
+                  window.open(`${element.deplink}`, '_blank');
+                }} className="bg-white text-black px-3 py-2 flex items-center gap-2 rounded-md">
                   <Link2 className="w-4" />
                   Live
                 </button>
-                <button className="bg-white text-black px-3 py-2 flex items-center gap-2 rounded-md">
+                <button onClick={() => {
+                  window.open(`${element.ghlink}`, '_blank');
+                }} className="bg-white text-black px-3 py-2 flex items-center gap-2 rounded-md">
                   <GitCommit />
                   Github
                 </button>
