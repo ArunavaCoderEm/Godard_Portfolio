@@ -8,6 +8,9 @@ export interface ProjLbImg {
     desc: string;
     index?: number,
     used : string;
+    maxdesc?: string,
+    team?: string[],
+    speciality?: string
 }
 
 export const projectsList: ProjLbImg[] = [
