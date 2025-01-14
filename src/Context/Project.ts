@@ -28,6 +28,7 @@ export const projectsList: ProjLbImg[] = [
     maxdesc:
       "A SaaS platform that empowers users to generate professional and customizable review templates effortlessly. Designed for businesses and individuals to enhance credibility.",
     speciality: "Template-based review generation with ease and authenticity.",
+    team: ["Arunava Dutta"]
   },
   {
     label: "Number Roulette",

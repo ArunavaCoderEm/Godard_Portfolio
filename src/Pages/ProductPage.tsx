@@ -2,7 +2,15 @@ import { motion } from "framer-motion";
 import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { projectsList, ProjLbImg } from "../Context/Project";
-import { Airplay, ArrowLeftCircle, ArrowRightCircle, TypeOutline, User } from "lucide-react";
+import {
+  Airplay,
+  ArrowLeftCircle,
+  ArrowRightCircle,
+  GitCommit,
+  Link2,
+  TypeOutline,
+  User,
+} from "lucide-react";
 
 export default function ProductPage(): React.ReactNode {
   const param = useParams();
@@ -35,7 +43,6 @@ export default function ProductPage(): React.ReactNode {
     >
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col h-full space-y-8">
-
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0 bg-black/40 p-6 rounded-2xl backdrop-blur-sm">
             <div className="space-y-2">
               <motion.h1
@@ -54,7 +61,8 @@ export default function ProductPage(): React.ReactNode {
               {element.type && (
                 <p className="text-black rounded-md flex items-center gap-2 bg-white px-3 py-1 text-lg">
                   <TypeOutline className="w-4 h-4" />
-                  {element.type}</p>
+                  {element.type}
+                </p>
               )}
             </div>
           </div>
@@ -65,7 +73,7 @@ export default function ProductPage(): React.ReactNode {
               animate={{ opacity: 1, scale: 1 }}
               className="relative group"
             >
-              <div className="absolute -inset-1 bg-gradient-to-r from-[#6EACDA] to-[#9FACE6] rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-300"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#6EACDA] to-[#9FACE6] rounded-2xl blur opacity-30 group-hover:opacity-50 h-[510px] transition duration-300"></div>
               <div className="relative">
                 <img
                   src={element.img}
@@ -73,10 +81,20 @@ export default function ProductPage(): React.ReactNode {
                   alt={element.label}
                 />
               </div>
+              <div className="mt-5 p-2 flex gap-2 justify-center items-center">
+                <button className="bg-white text-black px-3 py-2 flex items-center gap-2 rounded-md">
+                  <Link2 className="w-4" />
+                  Live
+                </button>
+                <button className="bg-white text-black px-3 py-2 flex items-center gap-2 rounded-md">
+                  <GitCommit />
+                  Github
+                </button>
+              </div>
             </motion.div>
 
             <div className="flex flex-col justify-between space-y-6">
-              <div className="bg-black/40 p-6 rounded-xl backdrop-blur-sm">
+              <div className="bg-black/80 p-6 rounded-xl backdrop-blur-sm">
                 <h2 className="text-2xl font-bold text-white mb-4">
                   Project Overview
                 </h2>
@@ -89,6 +107,23 @@ export default function ProductPage(): React.ReactNode {
                 <p className="text-[#6EACDA] font-bold mt-6 leading-relaxed text-lg">
                   {element.speciality}
                 </p>
+                <div className="mt-8">
+                  <h2 className="text-2xl font-bold text-white mb-4">
+                    Project Team
+                  </h2>
+                  <div>
+                    {element?.team?.map((itm: string, idx: number) => {
+                      return (
+                        <p
+                          className="bg-[#6EACDA]/40 p-2 text-white ml-2 inline-block rounded-md"
+                          key={idx}
+                        >
+                          {itm}
+                        </p>
+                      );
+                    })}
+                  </div>
+                </div>
               </div>
 
               <div className="space-y-4">
