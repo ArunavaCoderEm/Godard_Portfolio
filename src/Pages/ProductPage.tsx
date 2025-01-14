@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { projectsList, ProjLbImg } from "../Context/Project";
-import { Airplay, ArrowLeftCircle, ArrowRightCircle, User } from "lucide-react";
+import { Airplay, ArrowLeftCircle, ArrowRightCircle, TypeOutline, User } from "lucide-react";
 
 export default function ProductPage(): React.ReactNode {
   const param = useParams();
@@ -31,7 +31,7 @@ export default function ProductPage(): React.ReactNode {
         duration: 0.5,
         ease: "easeOut",
       }}
-      className="min-h-screen bg-gradient-to-b from-[#070707] to-[#121212] p-4 md:p-6 lg:p-8"
+      className="min-h-screen bg-gradient-to-b from-[#070707] to-[#121212] p-4 mt-20 mukta md:p-6 lg:p-8"
     >
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col h-full space-y-8">
@@ -45,15 +45,17 @@ export default function ProductPage(): React.ReactNode {
               >
                 {element.label}
               </motion.h1>
-              {element.type && (
-                <p className="text-gray-400 text-lg">{element.type}</p>
-              )}
             </div>
             <div className="flex items-center space-x-3">
               <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-xl flex items-center space-x-2">
                 <User className="w-5 h-5 text-[#6EACDA]" />
                 <span className="text-white font-medium">{element.auth}</span>
               </div>
+              {element.type && (
+                <p className="text-black rounded-md flex items-center gap-2 bg-white px-3 py-1 text-lg">
+                  <TypeOutline className="w-4 h-4" />
+                  {element.type}</p>
+              )}
             </div>
           </div>
 
@@ -78,8 +80,14 @@ export default function ProductPage(): React.ReactNode {
                 <h2 className="text-2xl font-bold text-white mb-4">
                   Project Overview
                 </h2>
-                <p className="text-gray-300 leading-relaxed text-lg">
+                <p className="text-[#6EACDA] leading-relaxed text-lg">
                   {element.desc}
+                </p>
+                <p className="text-gray-300 mt-6 leading-relaxed text-lg">
+                  {element.maxdesc}
+                </p>
+                <p className="text-[#6EACDA] font-bold mt-6 leading-relaxed text-lg">
+                  {element.speciality}
                 </p>
               </div>
 
@@ -118,7 +126,7 @@ export default function ProductPage(): React.ReactNode {
               }`}
             >
               <ArrowLeftCircle className="w-5 h-5" />
-              <span>Previous Project</span>
+              <span className="font-semibold">Previous Project</span>
             </button>
 
             <button
@@ -132,7 +140,7 @@ export default function ProductPage(): React.ReactNode {
                   : "bg-gradient-to-r from-[#9FACE6] to-[#6EACDA] hover:shadow-lg hover:shadow-[#6EACDA]/20"
               }`}
             >
-              <span>Next Project</span>
+              <span className="font-semibold">Next Project</span>
               <ArrowRightCircle className="w-5 h-5" />
             </button>
           </div>
