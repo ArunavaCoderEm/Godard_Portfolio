@@ -43,6 +43,7 @@ export const projectsList: ProjLbImg[] = [
     maxdesc:
       "An engaging web-based game that combines strategy and luck, allowing players to compete in real-time by spinning a roulette wheel to maximize their scores.",
     speciality: "Real-time interactive gaming with WebSocket integration.",
+    team: ["Arunava Dutta"]
   },
   {
     label: "KhetiSathi",
@@ -57,6 +58,7 @@ export const projectsList: ProjLbImg[] = [
     maxdesc:
       "A comprehensive AI-driven platform that equips farmers with tools and insights for effective agricultural management, including weather analysis, crop guidance, and financial planning.",
     speciality: "Empowering farmers with AI for smarter agriculture.",
+    team: ["Arunava Dutta", "Satyaki Dey", "Priyanshu Dutta", "Pretisha Sahoo", "Rishi Bhattasali", "Shinjan Saha"]
   },
   {
     label: "SupesView",
@@ -71,6 +73,7 @@ export const projectsList: ProjLbImg[] = [
     maxdesc:
       "A feature-rich platform offering detailed information about superheroes, utilizing advanced caching for seamless and efficient data retrieval.",
     speciality: "Efficient superhero data delivery with advanced caching.",
+    team: ["Arunava Dutta"]
   },
   {
     label: "Vehycle",
@@ -85,6 +88,7 @@ export const projectsList: ProjLbImg[] = [
     maxdesc:
       "An innovative SaaS platform designed for users to effortlessly locate and book mechanics or repair services for their vehicles with a seamless user experience.",
     speciality: "Connecting users and vehicle repair services efficiently.",
+    team: ["Arunava Dutta"]
   },
   {
     label: "RepXai",
@@ -99,6 +103,7 @@ export const projectsList: ProjLbImg[] = [
     maxdesc:
       "An AI-driven educational platform that simplifies the process of evaluating student assignments, managing marks, and generating actionable insights for educators.",
     speciality: "AI-enhanced academic performance evaluation and management.",
+    team: ["Arunava Dutta", "Satyaki Dey", "Priyanshu Dutta", "Pretisha Sahoo", "Rishi Bhattasali", "Subhadeep Roy"]
   },
   {
     label: "StudyGenie",
@@ -113,6 +118,7 @@ export const projectsList: ProjLbImg[] = [
     maxdesc:
       "A unique platform enabling students to upload and transform study materials into interactive notes, detailed summaries, and tailored question sets.",
     speciality: "Transforming study materials into interactive learning aids.",
+    team: ["Arunava Dutta", "Satyaki Dey", "Priyanshu Dutta", "Pretisha Sahoo"]
   },
   {
     label: "Edemy",
@@ -127,6 +133,7 @@ export const projectsList: ProjLbImg[] = [
     maxdesc:
       "A multilingual website featuring AI tools for personalized career guidance, empowering students to make informed decisions about their futures.",
     speciality: "Multilingual education platform with AI career support.",
+    team: ["Arunava Dutta", "Satyaki Dey", "Priyanshu Dutta", "Sonika Biswas", "Rishi Bhattasali"]
   },
   {
     label: "PetMe",
@@ -141,6 +148,7 @@ export const projectsList: ProjLbImg[] = [
     maxdesc:
       "A user-friendly platform for buying and selling pets, equipped with secure sign-in, easy listings, and intuitive browsing options for pet enthusiasts.",
     speciality: "Pet marketplace with seamless user experiences.",
+    team: ["Arunava Dutta"]
   },
   {
     label: "TaskEase",
@@ -155,6 +163,7 @@ export const projectsList: ProjLbImg[] = [
     maxdesc:
       "A productivity-boosting application designed to simplify task management, prioritize effectively, and ensure timely completions for users.",
     speciality: "Enhanced task management with intuitive priority tracking.",
+     team: ["Arunava Dutta"]
   },
   {
     label: "NovelNest",
@@ -169,6 +178,7 @@ export const projectsList: ProjLbImg[] = [
     maxdesc:
       "A virtual bookstore offering extensive details about books, enabling readers to make informed choices and discover their next favorite reads.",
     speciality: "Comprehensive book details for avid readers.",
+     team: ["Arunava Dutta"]
   },
   {
     label: "ScrapeSmart",
@@ -183,5 +193,6 @@ export const projectsList: ProjLbImg[] = [
     maxdesc:
       "A powerful data scraping platform integrated with AI prompts to streamline data extraction and make analysis more effective and efficient.",
     speciality: "Smart data scraping with AI prompt integration.",
+     team: ["Arunava Dutta"]
   },
 ];
