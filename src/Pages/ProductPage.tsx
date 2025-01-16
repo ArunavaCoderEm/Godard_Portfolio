@@ -119,7 +119,7 @@ export default function ProductPage(): React.ReactNode {
                     {element?.team?.map((itm: string, idx: number) => {
                       return (
                         <p
-                          className="bg-[#6EACDA]/40 p-2 text-white ml-2 inline-block rounded-md"
+                          className="bg-[#6EACDA]/40 p-2 text-white ml-2 my-1 inline-block rounded-md"
                           key={idx}
                         >
                           {itm}
@@ -141,7 +141,7 @@ export default function ProductPage(): React.ReactNode {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: idx * 0.1 }}
-                      className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-xl flex items-center space-x-2"
+                      className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-xl flex items-center space-y-1 space-x-2"
                     >
                       <Airplay className="w-4 h-4 text-[#6EACDA]" />
                       <span className="text-white">{item.trim()}</span>
@@ -161,11 +161,11 @@ export default function ProductPage(): React.ReactNode {
               className={`flex items-center space-x-2 px-6 py-3 rounded-xl transition-all duration-300 ${
                 id === 0
                   ? "bg-gray-700/50 cursor-not-allowed"
-                  : "bg-gradient-to-r from-[#6EACDA] to-[#9FACE6] hover:shadow-lg hover:shadow-[#6EACDA]/20"
+                  : "bg-gradient-to-r from-[#6EACDA] to-[#266ea5] hover:shadow-lg hover:shadow-[#6EACDA]/20"
               }`}
             >
               <ArrowLeftCircle className="w-5 h-5" />
-              <span className="font-semibold">Previous Project</span>
+              <span className="font-semibold">Prev</span>
             </button>
 
             <button
@@ -176,10 +176,10 @@ export default function ProductPage(): React.ReactNode {
               className={`flex items-center space-x-2 px-6 py-3 rounded-xl transition-all duration-300 ${
                 id === len - 1
                   ? "bg-gray-700/50 cursor-not-allowed"
-                  : "bg-gradient-to-r from-[#9FACE6] to-[#6EACDA] hover:shadow-lg hover:shadow-[#6EACDA]/20"
+                  : "bg-gradient-to-r from-[#266ea5] to-[#6EACDA] hover:shadow-lg hover:shadow-[#6EACDA]/20"
               }`}
             >
-              <span className="font-semibold">Next Project</span>
+              <span className="font-semibold">Next</span>
               <ArrowRightCircle className="w-5 h-5" />
             </button>
           </div>
