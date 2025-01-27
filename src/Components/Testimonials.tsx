@@ -20,7 +20,7 @@ const testimonials: Testlist[] = [
   {
     text: "Very Helpful! Sufficiently satisfied! Uniqueness is the best part.",
     name: "Sohan Karfa",
-    position: "App Developer, Coder",
+    position: "App Developer, Accenture",
     imgSrc: "./sohan.jpg",
     link: "https://www.linkedin.com/in/sohan-karfa/",
   },
