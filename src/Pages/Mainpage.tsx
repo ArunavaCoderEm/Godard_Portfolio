@@ -6,6 +6,7 @@ import Skills from './Skills'
 import Projects from './Projects'
 import Contact from './Contact'
 import TestimonialSlider from '../Components/Testimonials'
+import Experience from './Experience'
 
 export default function MainPage():React.ReactNode {
   return (
@@ -13,6 +14,7 @@ export default function MainPage():React.ReactNode {
     <Hero />
     <Exp />
     <Projects />
+    <Experience />
     <About />
     <Skills />
     <TestimonialSlider />
