@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import React from "react";
-import Skillcard from "../Components/Skillcard";
-import { Link } from "react-router-dom";
 
 export default function Experience(): React.ReactNode {
   return (
@@ -17,7 +15,7 @@ export default function Experience(): React.ReactNode {
         className="py-5 px-10 mukta"
       >
         <button className="flex my-5 items-center m-3 w-32 absolute right-0 left-0 mx-auto backdrop-blur-sm bg-black/60 text-white font-semibold px-4 py-1 rounded-full shadow-lg focus:outline-none">
-          <span className="mr-2">✨</span> Experience{" "}
+          <span className="mr-2">✨</span> Experiences{" "}
           <span className="ml-2">✨</span>
         </button>
         <div className="grid gap-x-4 grid-cols-1 md:grid-cols-2 mt-10 items-center justify-center py-5 bg-[#0F0F0F]">
@@ -27,8 +25,13 @@ export default function Experience(): React.ReactNode {
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="bg-gradient-to-br from-[#6EACDA] mt-6 to-[#4B92DB] rounded-lg border-2 border-black shadow-lg"
           >
-            <div className="flex flex-col md:flex-row items-center p-6 gap-4 bg-white rounded-lg hover:bg-[#6EACDA] transition-all duration-300">
-                
+            <div className="p-6 gap-2 bg-white flex flex-col rounded-lg hover:bg-[#6EACDA] transition-all duration-300">
+              <h1 className="font-bold text-xl">Techno Billion AI</h1>
+              <h2 className="font-bold text-md">SDE Intern</h2>
+              <h3 className="text-xs font-bold">Feb 2025 - Present</h3>
+              <p className="text-sm tracking-tight">
+                In TBAI I am the SDE Intern and bulding a product to make sure AI reaches everybody and is usable by everybody using modern technologies.
+              </p>
             </div>
           </motion.div>
           <motion.div
@@ -37,28 +40,15 @@ export default function Experience(): React.ReactNode {
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="bg-gradient-to-br from-[#6EACDA] mt-6 to-[#4B92DB] rounded-lg border-2 border-black shadow-lg"
           >
-            <Link
-              to="https://github.com/ArunavaCoderEm?tab=repositories"
-              target="_blank"
-              className="flex flex-col md:flex-row items-center p-6 gap-4 bg-white rounded-lg hover:bg-[#6EACDA] transition-all duration-300"
-            >
-              <img
-                src="./hi33.png"
-                className="lg:w-24 w-10 h-auto rounded-lg"
-                alt="Experience Icon"
-              />
-              <div className="flex flex-col">
-                <h1 className="font-extrabold text-xl lg:text-3xl">
-                  <span className="bg-black text-white p-1 rounded-lg mr-3">
-                    30+
-                  </span>{" "}
-                  Cool
-                </h1>
-                <span className="text-lg font-bold text-black mt-3">
-                  Projects
-                </span>
-              </div>
-            </Link>
+            <div className="p-6 gap-2 bg-white flex flex-col rounded-lg hover:bg-[#6EACDA] transition-all duration-300">
+              <h1 className="font-bold text-xl">FinnoFarms</h1>
+              <h2 className="font-bold text-md">Web Developer</h2>
+              <h3 className="text-xs font-bold">July 2024 - Dec 2024</h3>
+              <p className="text-sm tracking-tight">
+                In this company I along with the team built a full stack website
+                that serves products to the customers directly from the farmers.
+              </p>
+            </div>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -66,28 +56,15 @@ export default function Experience(): React.ReactNode {
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="bg-gradient-to-br from-[#6EACDA] mt-6 to-[#4B92DB] rounded-lg border-2 border-black shadow-lg"
           >
-            <Link
-              to="https://github.com/ArunavaCoderEm?tab=repositories"
-              target="_blank"
-              className="flex flex-col md:flex-row items-center p-6 gap-4 bg-white rounded-lg hover:bg-[#6EACDA] transition-all duration-300"
-            >
-              <img
-                src="./hi33.png"
-                className="lg:w-24 w-10 h-auto rounded-lg"
-                alt="Experience Icon"
-              />
-              <div className="flex flex-col">
-                <h1 className="font-extrabold text-xl lg:text-3xl">
-                  <span className="bg-black text-white p-1 rounded-lg mr-3">
-                    30+
-                  </span>{" "}
-                  Cool
-                </h1>
-                <span className="text-lg font-bold text-black mt-3">
-                  Projects
-                </span>
-              </div>
-            </Link>
+            <div className="p-6 gap-2 bg-white flex flex-col rounded-lg hover:bg-[#6EACDA] transition-all duration-300">
+              <h1 className="font-bold text-xl">GDG On Campus TMSL</h1>
+              <h2 className="font-bold text-md">Web Developer</h2>
+              <h3 className="text-xs font-bold">Sept 2024 - Present</h3>
+              <p className="text-sm tracking-tight">
+                I am a dedicated member of the Web Developer Team in the Google
+                Developer Student Club. Building and teaching web stuffs.
+              </p>
+            </div>
           </motion.div>
         </div>
       </motion.div>
