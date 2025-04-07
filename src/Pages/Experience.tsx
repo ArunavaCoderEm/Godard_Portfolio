@@ -42,11 +42,27 @@ export default function Experience(): React.ReactNode {
           >
             <div className="p-6 gap-2 bg-white flex flex-col rounded-lg hover:bg-[#6EACDA] transition-all duration-300">
               <h1 className="font-bold text-xl">FinnoFarms</h1>
-              <h2 className="font-bold text-md">Web Developer</h2>
+              <h2 className="font-bold text-md">Full Stack Web Developer</h2>
               <h3 className="text-xs font-bold">July 2024 - Dec 2024</h3>
               <p className="text-sm tracking-tight">
                 In this company I along with the team built a full stack website
                 that serves products to the customers directly from the farmers.
+              </p>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="bg-gradient-to-br from-[#6EACDA] mt-6 to-[#4B92DB] rounded-lg border-2 border-black shadow-lg"
+          >
+            <div className="p-6 gap-2 bg-white flex flex-col rounded-lg hover:bg-[#6EACDA] transition-all duration-300">
+              <h1 className="font-bold text-xl">SIH 2024 Winner</h1>
+              <h2 className="font-bold text-md">Full Stack Web Developer</h2>
+              <h3 className="text-xs font-bold">Nov 2024 - Dec 2024</h3>
+              <p className="text-sm tracking-tight">
+                In this event I along with the team built a full stack website
+                that serves from the farmers, for the farmers, to the farmers.
               </p>
             </div>
           </motion.div>
