@@ -7,6 +7,7 @@ import Projects from './Projects'
 import Contact from './Contact'
 import TestimonialSlider from '../Components/Testimonials'
 import Experience from './Experience'
+import Blogs from './Blogs'
 
 export default function MainPage():React.ReactNode {
   return (
@@ -16,6 +17,7 @@ export default function MainPage():React.ReactNode {
     <Projects />
     <Experience />
     <About />
+    <Blogs />
     <Skills />
     <TestimonialSlider />
     <Contact />
